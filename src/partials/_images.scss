@@ -1,0 +1,17 @@
+img.thumbnail {
+	background: $white;
+	padding: 5px;
+	border-radius: 3px;
+	
+	&.bordered {
+		border: 1px solid $color-secondary;
+	}
+	
+	&.plain {
+		border: none;
+		padding: 0;
+	}
+}
+img.background {
+	width: 100%;
+}

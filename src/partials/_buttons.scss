@@ -1,0 +1,50 @@
+.button {
+	padding: 6px 16px;
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: 1px solid;
+	border-radius: 3px;
+	display: inline-block;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba( 0, 0, 0, 0.25 );
+	
+	&.primary {
+		@include button-style($white, $color-primary, $color-primary-alt);
+	}
+	
+	&.secondary {
+		@include button-style($white, $color-secondary, $color-secondary-alt);
+	}
+	
+	&.error {
+		@include button-style($white, $color-error, $color-error-alt);
+	}
+	
+	&.watch {
+		@include button-style($white, $color-watch, $color-watch-alt);
+	}
+	
+	&.success {
+		@include button-style($white, $color-success, $color-success-alt);
+	}
+	
+	&.outline {
+		@include button-style($white, 'none', $white);
+	}
+	
+	&.mini {
+		@include button-size(2px 6px, 11px);
+	}
+	
+	&.small {
+		@include button-size(4px 10px, 11px);
+	}
+	
+	&.large {
+		@include button-size(10px 24px, 15px);
+	}
+	
+	&.huge {
+		@include button-size(16px 32px, 17px);
+	}
+}

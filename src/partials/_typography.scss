@@ -1,0 +1,11 @@
+@for $i from 1 through 6 {
+	h#{$i} {
+		@include create-heading($i);
+	}
+}
+$text-alignments: left, right, center;
+@each $text-alignment in $text-alignments {
+	.text-#{$text-alignment} {
+		text-align: $text-alignment;
+	}
+}
