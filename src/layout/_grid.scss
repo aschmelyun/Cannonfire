@@ -38,6 +38,19 @@
 	&.spaced {
 		margin: $row-vertical-spacing 0;
 	}
+	
+	&.no-gutter {
+		
+		.column {
+			margin: 0 !important;
+		}
+		
+		@for $i from 1 through 12 {
+			.span#{$i} {
+				@include make-columns-no-gutter($i, 12);
+			}
+		}
+	}
 }
 
 .column {
@@ -45,11 +58,7 @@
   min-height: 1px;
   
   &+& {
-    margin-left: 1%;
-  }
-  
-  &.extra-padding {
-  	padding: 0 1%;
+    margin-left: 4%;
   }
 }
 

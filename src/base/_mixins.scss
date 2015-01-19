@@ -37,10 +37,16 @@
 	  @else {
 	  	
 	  	$denominator: ( $total-columns / $current-column );
-	  	width: percentage( $current-column / $total-columns ) - ( ( $denominator - 1 ) / $denominator );
+	  	width: percentage( $current-column / $total-columns ) - ( ( ( $denominator - 1 ) * 4) / $denominator );
 	  	
 	  }
 	  
+}
+
+@mixin make-columns-no-gutter( $current-column, $total-columns ) {
+	
+	width: percentage( $current-column / $total-columns );
+	
 }
 
 @mixin button-style( $color, $background, $border ) {
