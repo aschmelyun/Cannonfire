@@ -134,7 +134,8 @@
 		
 	}
 	
-	margin:	0 0 $heading-margin;
+	margin: $heading-margin;
+	line-height: 1em + ( $heading / ( $heading + 6 ) );
 	
 }
 
@@ -150,6 +151,30 @@
 		font-size: 1.333333em;
 		display: inline-block;
 		line-height: 2.15em;
+		
+	}
+	
+}
+
+@mixin create-table( $padding, $border-color, $text-align ) {
+	
+	table {
+		
+		width: 100%;
+		
+	}
+	
+	th, td {
+		
+		padding: $padding;
+		border-bottom: 1px solid $border-color;
+		text-align: $text-align;
+		
+	}
+	
+	th {
+		
+		font-weight: bold;
 		
 	}
 	

@@ -3,7 +3,7 @@ $break-tablet:        	768px;
 $break-desktop-small: 	992px;
 $break-desktop-large: 	1200px;
 
-$row-vertical-spacing:	12px;
+$row-vertical-spacing:	36px;
 
 $color-primary:					#48CFAD;
 $color-primary-alt:			#37BC9B;
@@ -30,4 +30,9 @@ $introduction-background-image:	'https://ununsplash.imgix.net/reserve/xpdPwXTASn
 $introduction-gradient-from:		#ccc;
 $introduction-gradient-to:			#999;
 
-$heading-margin:								16px;
+$heading-margin:								4px 0 12px;
+
+$table-padding:									12px 16px;
+
+$font-size-main:								14px;
+$line-height-main:							20px;
