@@ -2,12 +2,12 @@ img {
 	max-width: 100%;
 }
 img.thumbnail {
-	background: $white;
-	padding: 5px;
-	border-radius: 3px;
+	background: $thumbnail-background;
+	padding: $thumbnail-padding;
+	border-radius: $thumbnail-border-radius;
 	
 	&.bordered {
-		border: 1px solid $color-secondary;
+		border: $thumbnail-bordered-border;
 	}
 	
 	&.plain {

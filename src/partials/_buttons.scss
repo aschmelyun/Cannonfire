@@ -1,12 +1,12 @@
 .button {
-	padding: 6px 16px;
-	font-size: 13px;
-	font-weight: bold;
-	border-bottom: 1px solid;
-	border-radius: 3px;
 	display: inline-block;
-	text-decoration: none;
-	text-shadow: 0 1px 1px rgba( 0, 0, 0, 0.25 );
+	border-bottom: 1px solid;
+	padding: $button-padding;
+	font-size: $button-font-size;
+	font-weight: $button-font-weight;
+	border-radius: $button-border-radius;
+	text-decoration: $button-text-decoration;
+	text-shadow: $button-text-shadow;
 	
 	&.primary {
 		@include button-style($white, $color-primary, $color-primary-alt);
@@ -33,18 +33,18 @@
 	}
 	
 	&.mini {
-		@include button-size(2px 6px, 11px);
+		@include button-size($button-mini-padding, $button-mini-font-size);
 	}
 	
 	&.small {
-		@include button-size(4px 10px, 11px);
+		@include button-size($button-small-padding, $button-small-font-size);
 	}
 	
 	&.large {
-		@include button-size(10px 24px, 15px);
+		@include button-size($button-large-padding, $button-large-font-size);
 	}
 	
 	&.huge {
-		@include button-size(16px 32px, 17px);
+		@include button-size($button-huge-padding, $button-huge-font-size);
 	}
 }
