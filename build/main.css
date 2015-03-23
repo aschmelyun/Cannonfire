@@ -250,6 +250,19 @@ h6 {
   text-align: center;
 }
 
+p {
+  line-height: 1.5em;
+  margin: 2em 0;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
+
 select,
 textarea,
 input[type="text"],
@@ -322,6 +335,45 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   color: #7f8b9c;
+}
+
+.navigation {
+  width: 100%;
+  border: 1px solid #CCD1D9;
+  text-align: left;
+}
+.navigation.centered {
+  text-align: center;
+}
+.navigation.right {
+  text-align: right;
+}
+.navigation ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.navigation li {
+  display: inline-block;
+  list-style-type: none;
+}
+.navigation li a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 100%;
+  padding: 12px 32px 12px 0;
+  font-size: 1.15em;
+  font-weight: normal;
+  color: #AAB2BD;
+}
+.navigation li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #48CFAD;
+}
+.navigation li.active a {
+  color: #48CFAD;
 }
 
 .button {

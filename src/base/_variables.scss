@@ -95,5 +95,14 @@ $thumbnail-border-radius:       3px;
 
 $thumbnail-bordered-border:     1px solid $color-secondary;
 
+// = Navigation
+$navigation-padding:            12px 32px 12px 0;
+$navigation-border:             1px solid $color-secondary;
+$navigation-font-size:          1.15em;
+$navigation-font-weight:        normal;
+$navigation-font-color:         $color-secondary-alt;
+$navigation-font-color-hover:   $color-primary;
+$navigation-font-color-active:  $color-primary;
+
 // = Tables
 $table-padding:                 12px 16px;
