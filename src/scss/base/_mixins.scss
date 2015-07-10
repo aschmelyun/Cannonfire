@@ -81,19 +81,11 @@
 	
 }
 
-@mixin alert-style( $color, $border ) {
-	
-	color: darken( $color, 15% );
-	border: 1px solid $border;
-	border-left-width: 5px;
-	
-}
+@mixin alert-style( $background, $border-color, $border-width ) {
 
-@mixin alert-link( $color ) {
-	
-	color: darken( $color, 15% );
-	font-weight: bold;
-	text-decoration: none;
+	background: $background;
+	color: $white;
+	border-left: $border-width solid $border-color;
 	
 }
 
