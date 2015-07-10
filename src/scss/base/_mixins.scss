@@ -147,3 +147,17 @@
 	}
 	
 }
+
+@mixin create-margin( $direction, $size, $margin ) {
+	$margin-title: 'mar-' + str-slice($direction, 1, 1) + '-' + str-slice($size, 1, 1);
+	.#{$margin-title} {
+		margin-#{$direction}: $margin;
+	}
+}
+
+@mixin create-padding( $direction, $size, $padding ) {
+	$padding-title: 'pad-' + str-slice($direction, 1, 1) + '-' + str-slice($size, 1, 1);
+	.#{$padding-title} {
+		padding-#{$direction}: $padding;
+	}
+}

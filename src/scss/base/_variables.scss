@@ -106,7 +106,6 @@ $cta-padding:                   1em 0;
 // = Font families and sizes
 $font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-main:                14px;
-$line-height-main:              20px;
 
 // = Forms and inputs
 $input-padding:                 6px 8px;
@@ -135,6 +134,12 @@ $thumbnail-padding:             5px;
 $thumbnail-border-radius:       3px;
 $thumbnail-bordered-border:     1px solid $color-secondary;
 
+// = Margins
+$default-margin-small:          4px;
+$default-margin-normal:         8px;
+$default-margin-large:          16px;
+$default-margin-huge:           32px;
+
 // = Navigation
 $navigation-padding:            12px 32px 12px 0;
 $navigation-border:             1px solid $color-secondary;
@@ -144,5 +149,15 @@ $navigation-font-color:         $color-secondary-alt;
 $navigation-font-color-hover:   $color-primary;
 $navigation-font-color-active:  $color-primary;
 
+// = Paddings
+$default-padding-small:          4px;
+$default-padding-normal:         8px;
+$default-padding-large:          16px;
+$default-padding-huge:           32px;
+
 // = Tables
 $table-padding:                 12px 16px;
+
+// = Typography
+$default-line-height:           0.75em;
+$line-height-main:              20px;
