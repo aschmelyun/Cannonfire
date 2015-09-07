@@ -1,151 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cannonfire Test</title>
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Cannonfire CSS</title>
+		<link rel="stylesheet" href="assets/css/cannonfire.css" />
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="intro background-image">
-			<h1>Check this out.</h1>
-			<h3>It's probably the greatest thing that you have seen all day. I guarantee it.</h3>
-			<a class="button large outline" href="#">See More</a>
-		</div>
-		<div class="navigation">
-		    <div class="wrapper fixed">
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Examples</a></li>
-                    <li><a href="#">Changelog</a></li>
-                    <li><a href="#">Download</a></li>
-                </ul>
-            </div>
-        </div>
-		<div class="wrapper fixed">
-			<div class="row spaced">
-				<div class="column span4 text-center">
-					<i class="fa fa-2x fa-cloud"></i>
-					<h3>Title One</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum maximus purus, id aliquet quam sodales id. Proin finibus suscipit commodo. Vestibulum nulla felis.</p>
-				</div>
-				<div class="column span4 text-center">
-					<i class="fa fa-2x fa-gear"></i>
-					<h3>Title Two</h3>
-					<p>Morbi porta nibh id placerat feugiat. Aenean ac mauris egestas, pretium quam vitae, condimentum nibh. Sed dui magna, semper ut malesuada nec, vestibulum nec erat.</p>
-				</div>
-				<div class="column span4 text-center">
-					<i class="fa fa-2x fa-lock"></i>
-					<h3>Title Three</h3>
-					<p>Mauris risus lectus, ornare sed iaculis nec, tincidunt a dolor. Etiam aliquet nunc lectus, eget consequat nibh euismod sed. Suspendisse ut luctus enim. Mauris in gravida nulla, quis.</p>
-				</div>
+		<div class="wrapper">
+			<div class="sidebar fixed left">
+				<ul class="menu-sidebar">
+					<li><a href="#wrappers">Wrappers</a></li>
+					<li><a href="#grid">Grid</a></li>
+					<li><a href="#media-queries">Media Queries</a></li>
+					<li><a href="#buttons">Buttons</a></li>
+					<li><a href="#forms">Forms</a></li>
+					<li><a href="#headings">Headings</a></li>
+					<li><a href="#text">Text</a></li>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#media">Media</a></li>
+					<li><a href="#menus">Menus</a></li>
+					<li><a href="#modals">Modals</a></li>
+					<li><a href="#positions">Positions</a></li>
+					<li><a href="#tables">Tables</a></li>
+				</ul>
 			</div>
-		</div>
-		<div class="cta background-secondary">
-			<div class="wrapper fixed">
-				<div class="row">
-					<div class="column span12 text-center">
-						<span>Are you ready to check it out yet?</span><a class="button primary huge">Let's go <i class="fa fa-lg fa-long-arrow-right"></i></a>
-					</div>
-				</div>
+			<div class="wrapper fluid with-sidebar-left">
+				
 			</div>
-		</div>
-		<div class="wrapper fixed">
-			<div class="row spaced no-gutter">
-				<div class="column span4">
-					<img src="http://placehold.it/500x150" />
-				</div>
-				<div class="column span4">
-					<img src="http://placehold.it/500x150" />
-				</div>
-				<div class="column span4">
-					<img src="http://placehold.it/500x150" />
-				</div>
-			</div>
-			<div class="row spaced">
-				<div class="column span12">
-					<table>
-						<thead>
-							<tr>
-								<th class="span4">Make</th>
-								<th class="span3">Model</th>
-								<th class="span3">Year</th>
-								<th class="span4">Exterior</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Chevrolet</td>
-								<td>Cruze</td>
-								<td>2014</td>
-								<td>Maroon Red</td>
-							</tr>
-							<tr>
-								<td>Tesla</td>
-								<td>Model S</td>
-								<td>2014</td>
-								<td>Black</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-		<div class="wrapper fixed">
-			<div class="alert success">
-				<i class="fa fa-check"></i>Your form has sent successfully!
-			</div>
-			<div class="alert watch">
-				There is a new version of this program available. Please upgrade soon.
-			</div>
-			<div class="alert error fw-b t-shad">
-				<i class="fa fa-exclamation-circle"></i>This is an alert with an icon!
-			</div>
-		    <div class="row spaced">
-		        <form method="post" action="">
-		            <div class="row">
-		                <div class="column span6">
-		                    <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="fname" />
-		                </div>
-		                <div class="column span6">
-		                    <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lname" />
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="column span5">
-		                    <label for="address">Street Address</label>
-                            <input type="text" id="address" name="address" />
-		                </div>
-		                <div class="column span3">
-		                    <label for="city">City</label>
-                            <input type="text" id="city" name="city" />
-		                </div>
-		                <div class="column span2">
-		                    <label for="state">State</label>
-                            <select id="state" name="state">
-                                <option value="FL">FL</option>
-                                <option value="GA">GA</option>
-                                <option value="MD">MD</option>
-                                <option value="CA">CA</option>
-                                <option value="NC">NC</option>
-                            </select>
-		                </div>
-		                <div class="column span2">
-		                    <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="zip" maxlength="5" />
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="column span12">
-		                    <label for="message">Additional Message</label>
-                            <textarea id="message" name="message"></textarea>
-		                </div>
-		            </div>
-		            <input type="submit" id="sendForm" name="sendForm" value="Send" />
-		        </form>
-		    </div>
 		</div>
 	</body>
 </html>

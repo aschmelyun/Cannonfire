@@ -4,6 +4,9 @@
  * @author aschmelyun
  */
 
+// Import variables
+@import 'base/variables';
+
 // Import mixins
 @import 'mixins/grid';
 @import 'mixins/fonts';
@@ -25,7 +28,6 @@
 @import 'base/reset';
 @import 'base/grid';
 @import 'base/fonts';
-@import 'base/variables';
 
 // Import partials
 @import 'partials/alignments';
