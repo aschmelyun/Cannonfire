@@ -140,6 +140,76 @@ table {
 .span12 {
   width: 100%; }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.button,
+.button:link
+.button:visited {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  .button.primary,
+  .button:link
+.button:visited.primary {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 6px 16px;
+    background: #48CFAD; }
+    .button.primary:hover,
+    .button:link
+.button:visited.primary:hover {
+      background: #2fb593; }
+    .button.primary:active,
+    .button:link
+.button:visited.primary:active {
+      background: #258c72; }
+    .button.primary.outline,
+    .button:link
+.button:visited.primary.outline {
+      background: none;
+      color: #48CFAD;
+      border: 1px solid #48CFAD; }
+      .button.primary.outline:hover,
+      .button:link
+.button:visited.primary.outline:hover {
+        border-color: #2fb593; }
+      .button.primary.outline:active,
+      .button:link
+.button:visited.primary.outline:active {
+        border-color: #258c72; }
+  .button.secondary,
+  .button:link
+.button:visited.secondary {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 6px 16px;
+    background: #CCD1D9; }
+    .button.secondary:hover,
+    .button:link
+.button:visited.secondary:hover {
+      background: #afb7c3; }
+    .button.secondary:active,
+    .button:link
+.button:visited.secondary:active {
+      background: #929cad; }
+    .button.secondary.outline,
+    .button:link
+.button:visited.secondary.outline {
+      background: none;
+      color: #CCD1D9;
+      border: 1px solid #CCD1D9; }
+      .button.secondary.outline:hover,
+      .button:link
+.button:visited.secondary.outline:hover {
+        border-color: #afb7c3; }
+      .button.secondary.outline:active,
+      .button:link
+.button:visited.secondary.outline:active {
+        border-color: #929cad; }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

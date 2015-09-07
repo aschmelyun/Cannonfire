@@ -1,0 +1,28 @@
+@mixin make-button($color, $font-size, $padding, $background) {
+	color: $color;
+	font-size: $font-size;
+	padding: $padding;
+	background: $background;
+
+	&:hover {
+		background: darken($background, 10%);
+	}
+
+	&:active {
+		background: darken($background, 20%);
+	}
+}
+
+@mixin make-button-outline($color) {
+	background: none;
+	color: $color;
+	border: 1px solid $color;
+
+	&:hover {
+		border-color: darken($color, 10%);
+	}
+
+	&:active {
+		border-color: darken($color, 20%);
+	}
+}

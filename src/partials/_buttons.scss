@@ -1,0 +1,25 @@
+.button,
+.button:link
+.button:visited {
+	display: inline-block;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	&.primary {
+		@include make-button($white, $button-font-size, $button-padding, $color-primary);
+
+		&.outline {
+			@include make-button-outline($color-primary);
+		}
+	}
+
+	&.secondary {
+		@include make-button($white, $button-font-size, $button-padding, $color-secondary);
+
+		&.outline {
+			@include make-button-outline($color-secondary);
+		}
+	}
+}
