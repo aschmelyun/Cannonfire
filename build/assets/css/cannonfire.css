@@ -210,6 +210,165 @@ body {
 .button:visited.secondary.outline:active {
         border-color: #929cad; }
 
+.padded {
+  padding: 8px; }
+
+.color-white {
+  color: #FFFFFF; }
+
+.background-white {
+  background: #FFFFFF; }
+
+.color-black {
+  color: #000000; }
+
+.background-black {
+  background: #000000; }
+
+.color-red-light {
+  color: #ED5565; }
+
+.background-red-light {
+  background: #ED5565; }
+
+.color-red-dark {
+  color: #DA4453; }
+
+.background-red-dark {
+  background: #DA4453; }
+
+.color-orange-light {
+  color: #FC6E51; }
+
+.background-orange-light {
+  background: #FC6E51; }
+
+.color-orange-dark {
+  color: #E9573F; }
+
+.background-orange-dark {
+  background: #E9573F; }
+
+.color-yellow-light {
+  color: #FFCE54; }
+
+.background-yellow-light {
+  background: #FFCE54; }
+
+.color-yellow-dark {
+  color: #FCBB42; }
+
+.background-yellow-dark {
+  background: #FCBB42; }
+
+.color-green-light {
+  color: #A0D468; }
+
+.background-green-light {
+  background: #A0D468; }
+
+.color-green-dark {
+  color: #8CC152; }
+
+.background-green-dark {
+  background: #8CC152; }
+
+.color-teal-light {
+  color: #48CFAD; }
+
+.background-teal-light {
+  background: #48CFAD; }
+
+.color-teal-dark {
+  color: #37BC9B; }
+
+.background-teal-dark {
+  background: #37BC9B; }
+
+.color-aqua-light {
+  color: #4FC1E9; }
+
+.background-aqua-light {
+  background: #4FC1E9; }
+
+.color-aqua-dark {
+  color: #3BAFDA; }
+
+.background-aqua-dark {
+  background: #3BAFDA; }
+
+.color-blue-light {
+  color: #5D9CEC; }
+
+.background-blue-light {
+  background: #5D9CEC; }
+
+.color-blue-dark {
+  color: #4A89DC; }
+
+.background-blue-dark {
+  background: #4A89DC; }
+
+.color-purple-light {
+  color: #AC92EC; }
+
+.background-purple-light {
+  background: #AC92EC; }
+
+.color-purple-dark {
+  color: #967ADC; }
+
+.background-purple-dark {
+  background: #967ADC; }
+
+.color-pink-light {
+  color: #EC87C0; }
+
+.background-pink-light {
+  background: #EC87C0; }
+
+.color-pink-dark {
+  color: #D770AD; }
+
+.background-pink-dark {
+  background: #D770AD; }
+
+.color-lightgrey-light {
+  color: #F5F7FA; }
+
+.background-lightgrey-light {
+  background: #F5F7FA; }
+
+.color-lightgrey-dark {
+  color: #E6E9ED; }
+
+.background-lightgrey-dark {
+  background: #E6E9ED; }
+
+.color-grey-light {
+  color: #CCD1D9; }
+
+.background-grey-light {
+  background: #CCD1D9; }
+
+.color-grey-dark {
+  color: #AAB2BD; }
+
+.background-grey-dark {
+  background: #AAB2BD; }
+
+.color-darkgrey-light {
+  color: #656D78; }
+
+.background-darkgrey-light {
+  background: #656D78; }
+
+.color-darkgrey-dark {
+  color: #434A54; }
+
+.background-darkgrey-dark {
+  background: #434A54; }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

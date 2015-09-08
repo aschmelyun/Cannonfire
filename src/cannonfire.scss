@@ -23,6 +23,7 @@
 @import 'mixins/positions';
 @import 'mixins/intro';
 @import 'mixins/boards';
+@import 'mixins/colors';
 
 // Import base
 @import 'base/reset';
@@ -43,6 +44,7 @@
 @import 'partials/positions';
 @import 'partials/intro';
 @import 'partials/boards';
+@import 'partials/colors';
 
 // Import vendor
 @import "vendor/font-awesome/scss/font-awesome";

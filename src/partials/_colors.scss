@@ -1,0 +1,8 @@
+$color-vars-list: $white $black $red-light $red-dark $orange-light $orange-dark $yellow-light $yellow-dark $green-light $green-dark $teal-light $teal-dark $aqua-light $aqua-dark $blue-light $blue-dark $purple-light $purple-dark $pink-light $pink-dark $lightgrey-light $lightgrey-dark $grey-light $grey-dark $darkgrey-light $darkgrey-dark;
+$color-names-list: white black red-light red-dark orange-light orange-dark yellow-light yellow-dark green-light green-dark teal-light teal-dark aqua-light aqua-dark blue-light blue-dark purple-light purple-dark pink-light pink-dark lightgrey-light lightgrey-dark grey-light grey-dark darkgrey-light darkgrey-dark;
+
+@each $color-var in $color-vars-list {
+	$i: index($color-vars-list, $color-var);
+	@include make-color($color-var, nth($color-names-list, $i));
+	@include make-background($color-var, nth($color-names-list, $i));
+}
