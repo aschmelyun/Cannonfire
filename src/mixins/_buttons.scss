@@ -11,6 +11,11 @@
 	&:active {
 		background: darken($background, 20%);
 	}
+
+	&:focus {
+		outline: 0;
+		outline: none;
+	}
 }
 
 @mixin make-button-outline($color) {
@@ -25,4 +30,14 @@
 	&:active {
 		border-color: darken($color, 20%);
 	}
+
+	&:focus {
+		outline: 0;
+		outline: none;
+	}
+}
+
+@mixin make-button-size($font-size, $padding) {
+	font-size: $font-size;
+	padding: $padding;
 }

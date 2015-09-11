@@ -143,6 +143,10 @@ table {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+form.styled input[type="submit"] {
+  line-height: inherit;
+  border: none; }
+
 .button,
 .button:link
 .button:visited {
@@ -166,6 +170,11 @@ body {
     .button:link
 .button:visited.primary:active {
       background: #258c72; }
+    .button.primary:focus,
+    .button:link
+.button:visited.primary:focus {
+      outline: 0;
+      outline: none; }
     .button.primary.outline,
     .button:link
 .button:visited.primary.outline {
@@ -180,6 +189,11 @@ body {
       .button:link
 .button:visited.primary.outline:active {
         border-color: #258c72; }
+      .button.primary.outline:focus,
+      .button:link
+.button:visited.primary.outline:focus {
+        outline: 0;
+        outline: none; }
   .button.secondary,
   .button:link
 .button:visited.secondary {
@@ -195,6 +209,11 @@ body {
     .button:link
 .button:visited.secondary:active {
       background: #929cad; }
+    .button.secondary:focus,
+    .button:link
+.button:visited.secondary:focus {
+      outline: 0;
+      outline: none; }
     .button.secondary.outline,
     .button:link
 .button:visited.secondary.outline {
@@ -209,9 +228,43 @@ body {
       .button:link
 .button:visited.secondary.outline:active {
         border-color: #929cad; }
+      .button.secondary.outline:focus,
+      .button:link
+.button:visited.secondary.outline:focus {
+        outline: 0;
+        outline: none; }
+  .button.mini,
+  .button:link
+.button:visited.mini {
+    font-size: 11px;
+    padding: 2px 6px; }
+  .button.small,
+  .button:link
+.button:visited.small {
+    font-size: 11px;
+    padding: 4px 10px; }
+  .button.large,
+  .button:link
+.button:visited.large {
+    font-size: 15px;
+    padding: 10px 24px; }
+  .button.huge,
+  .button:link
+.button:visited.huge {
+    font-size: 17px;
+    padding: 16px 32px; }
 
 .padded {
   padding: 8px; }
+
+.padded-s {
+  padding: 4px; }
+
+.padded-l {
+  padding: 16px; }
+
+.padded-xl {
+  padding: 32px; }
 
 .color-white {
   color: #FFFFFF; }

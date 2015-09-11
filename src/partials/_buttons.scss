@@ -22,4 +22,20 @@
 			@include make-button-outline($color-secondary);
 		}
 	}
+
+	&.mini {
+		@include make-button-size($button-font-size-mini, $button-padding-mini);
+	}
+
+	&.small {
+		@include make-button-size($button-font-size-small, $button-padding-small);
+	}
+
+	&.large {
+		@include make-button-size($button-font-size-large, $button-padding-large);
+	}
+
+	&.huge {
+		@include make-button-size($button-font-size-huge, $button-padding-huge);
+	}
 }
