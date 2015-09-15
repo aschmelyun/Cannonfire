@@ -79,8 +79,8 @@ $grey-dark:                     #AAB2BD;
 $darkgrey-light:               #656D78;
 $darkgrey-dark:                #434A54;
 
-$color-primary:                 $teal-light;
-$color-primary-alt:             $teal-dark;
+$color-primary:                 $aqua-light;
+$color-primary-alt:             $aqua-dark;
 
 $color-secondary:               $grey-light;
 $color-secondary-alt:           $grey-dark;
@@ -107,20 +107,18 @@ $cta-padding:                   1em 0;
 // = Font families and sizes
 $font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-main:                14px;
+$font-color:					$darkgrey-dark;
 
 // = Forms and inputs
 $input-padding:                 6px 8px;
 $input-margin:                  0 0 8px;
 $input-border-radius:           3px;
-$input-submit-padding:          10px 24px;
-$input-submit-font-size:        15px;
-$input-submit-font-weight:      bold;
-$input-submit-border-radius:    3px;
-$input-submit-text-shadow:      0 1px 1px rgba( 0, 0, 0, 0.25 );
-$input-label-font-size:         ($font-size-main * 0.75);
+$input-label-font-size:         ($font-size-main * 0.85);
 $input-label-font-weight:       700;
 $input-label-text-transform:    uppercase;
+$input-label-width:				25%;
 $input-label-color:             darken($color-secondary-alt, 15%);
+$input-row-spacing:				0 0 8px;
 
 // = Grids and rows
 $row-vertical-spacing:          36px;

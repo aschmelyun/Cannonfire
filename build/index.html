@@ -134,18 +134,37 @@
 				</div>
 				<div class="row spaced" id="forms">
 					<h2>Forms</h2>
+					<form class="styled span4">
+						<div class="row">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="Email Address" />
+						</div>
+						<div class="row">
+							<label for="password">Password</label>
+							<input type="password" id="password" name="password" placeholder="Password" />
+						</div>
+						<div class="row">
+							<label for="remember" class="checkbox">
+								<input id="remember" type="checkbox" /> Remember Me
+							</label>
+						</div>
+						<div class="row">
+							<input type="submit" class="button primary large" value="Sign In" />
+						</div>
+					</form>
 					<form class="styled">
-						<label for="email">Email</label>
-						<input type="email" id="email" name="email" placeholder="Email Address" />
-
-						<label for="password">Password</label>
-						<input type="password" id="password" name="password" placeholder="Password" />
-
-						<label for="remember">
-							<input id="remember" type="checkbox" /> Remember Me
-						</label>
-
-						<input type="submit" class="button primary large" value="Sign In" />
+						<div class="row">
+							<input type="text" class="primary" value=".primary" />
+							<input type="text" class="success" value=".success" />
+							<input type="text" class="watch" value=".watch" />
+							<input type="text" class="error" value=".error" />
+						</div>
+						<div class="row">
+							<input type="text" class="primary filled" value=".primary.filled" />
+							<input type="text" class="success filled" value=".success.filled" />
+							<input type="text" class="watch filled" value=".watch.filled" />
+							<input type="text" class="error filled" value=".error.filled" />
+						</div>
 					</form>
 				</div>
 				<div class="row spaced" id="headings">

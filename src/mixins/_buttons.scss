@@ -9,7 +9,7 @@
 	}
 
 	&:active {
-		background: darken($background, 20%);
+		background: darken($background, 15%);
 	}
 
 	&:focus {
@@ -25,10 +25,12 @@
 
 	&:hover {
 		border-color: darken($color, 10%);
+		color: darken($color, 10%);
 	}
 
 	&:active {
-		border-color: darken($color, 20%);
+		border-color: darken($color, 15%);
+		color: darken($color, 15%);
 	}
 
 	&:focus {

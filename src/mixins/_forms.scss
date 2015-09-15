@@ -1,0 +1,88 @@
+@mixin make-inputs() {
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		padding: $input-padding;
+		border: 1px solid $color-secondary;
+		-webkit-border-radius: $input-border-radius;
+		-moz-border-radius: $input-border-radius;
+		border-radius: $input-border-radius;
+
+		&.filled {
+			background: $color-secondary;
+			color: $white;
+		}
+
+		&:focus {
+			outline: 0;
+			outline: none;
+			border: 1px solid $color-secondary-alt;
+			color: $font-color;
+			background: $white;
+		}
+
+		&.primary {
+			border: 1px solid $color-primary;
+			color: $color-primary;
+
+			&.filled {
+				background: $color-primary;
+				color: $white;
+			}
+
+			&:focus {
+				border: 1px solid $color-primary-alt;
+				color: darken($color-primary, 15%);
+				background: $white;
+			}
+		}
+
+		&.success {
+			border: 1px solid $color-success;
+			color: $color-success;
+
+			&.filled {
+				background: $color-success;
+				color: $white;
+			}
+
+			&:focus {
+				border: 1px solid $color-success-alt;
+				color: darken($color-success, 15%);
+				background: $white;
+			}
+		}
+
+		&.watch {
+			border: 1px solid $color-watch;
+			color: $color-watch;
+
+			&.filled {
+				background: $color-watch;
+				color: $white;
+			}
+
+			&:focus {
+				border: 1px solid $color-watch-alt;
+				color: darken($color-watch, 15%);
+				background: $white;
+			}
+		}
+
+		&.error {
+			border: 1px solid $color-error;
+			color: $color-error;
+
+			&.filled {
+				background: $color-error;
+				color: $white;
+			}
+
+			&:focus {
+				border: 1px solid $color-error-alt;
+				color: darken($color-error, 15%);
+				background: $white;
+			}
+		}
+	}
+}
