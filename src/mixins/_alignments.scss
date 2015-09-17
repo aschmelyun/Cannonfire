@@ -1,0 +1,24 @@
+@mixin make-alignments() {
+	.align-right {
+		float: right;
+	}
+	.align-left {
+		float: left;
+	}
+	.align-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@mixin make-text-alignments() {
+	.text-left {
+		text-align: left;
+	}
+	.text-center {
+		text-align: center;
+	}
+	.text-right {
+		text-align: right;
+	}
+}
