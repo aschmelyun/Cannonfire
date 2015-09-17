@@ -43,7 +43,11 @@
 		
         @for $i from 1 through 12 {
 		    .span#{$i} {
-			    @include make-columns-no-gutter($i, 12);
+                width: 100%;
+
+                @include scale-to('tablet') {
+                    @include make-columns-no-gutter($i, 12);
+                }
 		    }
 	    }
     }
@@ -54,12 +58,20 @@
     min-height: 1px;
   
     &+& {
-        margin-left: 4%;
+        margin-left: 0;
+
+        @include scale-to('tablet') {
+            margin-left: $grid-gutter-margin;
+        }
     }
 }
 
 @for $i from 1 through 12 {
     .span#{$i} {
-        @include make-columns($i, 12);
+        width: 100%;
+
+        @include scale-to('tablet') {
+            @include make-columns($i, 12);
+        }
     }
 }

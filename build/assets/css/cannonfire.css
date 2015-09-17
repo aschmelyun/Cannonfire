@@ -74,71 +74,146 @@ table {
   .row.no-gutter .column {
     margin: 0 !important; }
   .row.no-gutter .span1 {
-    width: 8.33333%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span1 {
+        width: 8.33333%; } }
   .row.no-gutter .span2 {
-    width: 16.66667%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span2 {
+        width: 16.66667%; } }
   .row.no-gutter .span3 {
-    width: 25%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span3 {
+        width: 25%; } }
   .row.no-gutter .span4 {
-    width: 33.33333%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span4 {
+        width: 33.33333%; } }
   .row.no-gutter .span5 {
-    width: 41.66667%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span5 {
+        width: 41.66667%; } }
   .row.no-gutter .span6 {
-    width: 50%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span6 {
+        width: 50%; } }
   .row.no-gutter .span7 {
-    width: 58.33333%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span7 {
+        width: 58.33333%; } }
   .row.no-gutter .span8 {
-    width: 66.66667%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span8 {
+        width: 66.66667%; } }
   .row.no-gutter .span9 {
-    width: 75%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span9 {
+        width: 75%; } }
   .row.no-gutter .span10 {
-    width: 83.33333%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span10 {
+        width: 83.33333%; } }
   .row.no-gutter .span11 {
-    width: 91.66667%; }
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span11 {
+        width: 91.66667%; } }
   .row.no-gutter .span12 {
     width: 100%; }
+    @media screen and (min-width: 768px) {
+      .row.no-gutter .span12 {
+        width: 100%; } }
 
 .column {
   float: left;
   min-height: 1px; }
   .column + .column {
-    margin-left: 4%; }
+    margin-left: 0; }
+    @media screen and (min-width: 768px) {
+      .column + .column {
+        margin-left: 4%; } }
 
 .span1 {
-  width: 4.66667%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span1 {
+      width: 4.66667%; } }
 
 .span2 {
-  width: 13.33333%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span2 {
+      width: 13.33333%; } }
 
 .span3 {
-  width: 22%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span3 {
+      width: 22%; } }
 
 .span4 {
-  width: 30.66667%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span4 {
+      width: 30.66667%; } }
 
 .span5 {
-  width: 39.33333%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span5 {
+      width: 39.33333%; } }
 
 .span6 {
-  width: 48%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span6 {
+      width: 48%; } }
 
 .span7 {
-  width: 56.66667%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span7 {
+      width: 56.66667%; } }
 
 .span8 {
-  width: 65.33333%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span8 {
+      width: 65.33333%; } }
 
 .span9 {
-  width: 74%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span9 {
+      width: 74%; } }
 
 .span10 {
-  width: 82.66667%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span10 {
+      width: 82.66667%; } }
 
 .span11 {
-  width: 91.33333%; }
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span11 {
+      width: 91.33333%; } }
 
 .span12 {
   width: 100%; }
+  @media screen and (min-width: 768px) {
+    .span12 {
+      width: 100%; } }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -159,7 +234,6 @@ form.styled input[type="submit"] {
 
 form.styled label {
   display: inline-block;
-  width: 25%;
   font-size: 11.9px;
   font-weight: 700; }
   form.styled label.checkbox {
@@ -170,20 +244,63 @@ form.styled .row {
 
 form.styled input[type="text"],
 form.styled input[type="email"],
-form.styled input[type="password"] {
+form.styled input[type="password"],
+form.styled input[type="date"],
+form.styled input[type="color"],
+form.styled input[type="datetime"],
+form.styled input[type="datetime-local"],
+form.styled input[type="month"],
+form.styled input[type="number"],
+form.styled input[type="range"],
+form.styled input[type="search"],
+form.styled input[type="tel"],
+form.styled input[type="time"],
+form.styled input[type="url"],
+form.styled input[type="week"],
+form.styled select,
+form.styled textarea {
   padding: 6px 8px;
   border: 1px solid #CCD1D9;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background: #FFFFFF; }
   form.styled input[type="text"].filled,
   form.styled input[type="email"].filled,
-  form.styled input[type="password"].filled {
+  form.styled input[type="password"].filled,
+  form.styled input[type="date"].filled,
+  form.styled input[type="color"].filled,
+  form.styled input[type="datetime"].filled,
+  form.styled input[type="datetime-local"].filled,
+  form.styled input[type="month"].filled,
+  form.styled input[type="number"].filled,
+  form.styled input[type="range"].filled,
+  form.styled input[type="search"].filled,
+  form.styled input[type="tel"].filled,
+  form.styled input[type="time"].filled,
+  form.styled input[type="url"].filled,
+  form.styled input[type="week"].filled,
+  form.styled select.filled,
+  form.styled textarea.filled {
     background: #CCD1D9;
     color: #FFFFFF; }
   form.styled input[type="text"]:focus,
   form.styled input[type="email"]:focus,
-  form.styled input[type="password"]:focus {
+  form.styled input[type="password"]:focus,
+  form.styled input[type="date"]:focus,
+  form.styled input[type="color"]:focus,
+  form.styled input[type="datetime"]:focus,
+  form.styled input[type="datetime-local"]:focus,
+  form.styled input[type="month"]:focus,
+  form.styled input[type="number"]:focus,
+  form.styled input[type="range"]:focus,
+  form.styled input[type="search"]:focus,
+  form.styled input[type="tel"]:focus,
+  form.styled input[type="time"]:focus,
+  form.styled input[type="url"]:focus,
+  form.styled input[type="week"]:focus,
+  form.styled select:focus,
+  form.styled textarea:focus {
     outline: 0;
     outline: none;
     border: 1px solid #AAB2BD;
@@ -191,68 +308,244 @@ form.styled input[type="password"] {
     background: #FFFFFF; }
   form.styled input[type="text"].primary,
   form.styled input[type="email"].primary,
-  form.styled input[type="password"].primary {
+  form.styled input[type="password"].primary,
+  form.styled input[type="date"].primary,
+  form.styled input[type="color"].primary,
+  form.styled input[type="datetime"].primary,
+  form.styled input[type="datetime-local"].primary,
+  form.styled input[type="month"].primary,
+  form.styled input[type="number"].primary,
+  form.styled input[type="range"].primary,
+  form.styled input[type="search"].primary,
+  form.styled input[type="tel"].primary,
+  form.styled input[type="time"].primary,
+  form.styled input[type="url"].primary,
+  form.styled input[type="week"].primary,
+  form.styled select.primary,
+  form.styled textarea.primary {
     border: 1px solid #4FC1E9;
     color: #4FC1E9; }
     form.styled input[type="text"].primary.filled,
     form.styled input[type="email"].primary.filled,
-    form.styled input[type="password"].primary.filled {
+    form.styled input[type="password"].primary.filled,
+    form.styled input[type="date"].primary.filled,
+    form.styled input[type="color"].primary.filled,
+    form.styled input[type="datetime"].primary.filled,
+    form.styled input[type="datetime-local"].primary.filled,
+    form.styled input[type="month"].primary.filled,
+    form.styled input[type="number"].primary.filled,
+    form.styled input[type="range"].primary.filled,
+    form.styled input[type="search"].primary.filled,
+    form.styled input[type="tel"].primary.filled,
+    form.styled input[type="time"].primary.filled,
+    form.styled input[type="url"].primary.filled,
+    form.styled input[type="week"].primary.filled,
+    form.styled select.primary.filled,
+    form.styled textarea.primary.filled {
       background: #4FC1E9;
       color: #FFFFFF; }
     form.styled input[type="text"].primary:focus,
     form.styled input[type="email"].primary:focus,
-    form.styled input[type="password"].primary:focus {
+    form.styled input[type="password"].primary:focus,
+    form.styled input[type="date"].primary:focus,
+    form.styled input[type="color"].primary:focus,
+    form.styled input[type="datetime"].primary:focus,
+    form.styled input[type="datetime-local"].primary:focus,
+    form.styled input[type="month"].primary:focus,
+    form.styled input[type="number"].primary:focus,
+    form.styled input[type="range"].primary:focus,
+    form.styled input[type="search"].primary:focus,
+    form.styled input[type="tel"].primary:focus,
+    form.styled input[type="time"].primary:focus,
+    form.styled input[type="url"].primary:focus,
+    form.styled input[type="week"].primary:focus,
+    form.styled select.primary:focus,
+    form.styled textarea.primary:focus {
       border: 1px solid #3BAFDA;
       color: #1aa2d1;
       background: #FFFFFF; }
   form.styled input[type="text"].success,
   form.styled input[type="email"].success,
-  form.styled input[type="password"].success {
+  form.styled input[type="password"].success,
+  form.styled input[type="date"].success,
+  form.styled input[type="color"].success,
+  form.styled input[type="datetime"].success,
+  form.styled input[type="datetime-local"].success,
+  form.styled input[type="month"].success,
+  form.styled input[type="number"].success,
+  form.styled input[type="range"].success,
+  form.styled input[type="search"].success,
+  form.styled input[type="tel"].success,
+  form.styled input[type="time"].success,
+  form.styled input[type="url"].success,
+  form.styled input[type="week"].success,
+  form.styled select.success,
+  form.styled textarea.success {
     border: 1px solid #A0D468;
     color: #A0D468; }
     form.styled input[type="text"].success.filled,
     form.styled input[type="email"].success.filled,
-    form.styled input[type="password"].success.filled {
+    form.styled input[type="password"].success.filled,
+    form.styled input[type="date"].success.filled,
+    form.styled input[type="color"].success.filled,
+    form.styled input[type="datetime"].success.filled,
+    form.styled input[type="datetime-local"].success.filled,
+    form.styled input[type="month"].success.filled,
+    form.styled input[type="number"].success.filled,
+    form.styled input[type="range"].success.filled,
+    form.styled input[type="search"].success.filled,
+    form.styled input[type="tel"].success.filled,
+    form.styled input[type="time"].success.filled,
+    form.styled input[type="url"].success.filled,
+    form.styled input[type="week"].success.filled,
+    form.styled select.success.filled,
+    form.styled textarea.success.filled {
       background: #A0D468;
       color: #FFFFFF; }
     form.styled input[type="text"].success:focus,
     form.styled input[type="email"].success:focus,
-    form.styled input[type="password"].success:focus {
+    form.styled input[type="password"].success:focus,
+    form.styled input[type="date"].success:focus,
+    form.styled input[type="color"].success:focus,
+    form.styled input[type="datetime"].success:focus,
+    form.styled input[type="datetime-local"].success:focus,
+    form.styled input[type="month"].success:focus,
+    form.styled input[type="number"].success:focus,
+    form.styled input[type="range"].success:focus,
+    form.styled input[type="search"].success:focus,
+    form.styled input[type="tel"].success:focus,
+    form.styled input[type="time"].success:focus,
+    form.styled input[type="url"].success:focus,
+    form.styled input[type="week"].success:focus,
+    form.styled select.success:focus,
+    form.styled textarea.success:focus {
       border: 1px solid #8CC152;
       color: #7aba35;
       background: #FFFFFF; }
   form.styled input[type="text"].watch,
   form.styled input[type="email"].watch,
-  form.styled input[type="password"].watch {
+  form.styled input[type="password"].watch,
+  form.styled input[type="date"].watch,
+  form.styled input[type="color"].watch,
+  form.styled input[type="datetime"].watch,
+  form.styled input[type="datetime-local"].watch,
+  form.styled input[type="month"].watch,
+  form.styled input[type="number"].watch,
+  form.styled input[type="range"].watch,
+  form.styled input[type="search"].watch,
+  form.styled input[type="tel"].watch,
+  form.styled input[type="time"].watch,
+  form.styled input[type="url"].watch,
+  form.styled input[type="week"].watch,
+  form.styled select.watch,
+  form.styled textarea.watch {
     border: 1px solid #FFCE54;
     color: #FFCE54; }
     form.styled input[type="text"].watch.filled,
     form.styled input[type="email"].watch.filled,
-    form.styled input[type="password"].watch.filled {
+    form.styled input[type="password"].watch.filled,
+    form.styled input[type="date"].watch.filled,
+    form.styled input[type="color"].watch.filled,
+    form.styled input[type="datetime"].watch.filled,
+    form.styled input[type="datetime-local"].watch.filled,
+    form.styled input[type="month"].watch.filled,
+    form.styled input[type="number"].watch.filled,
+    form.styled input[type="range"].watch.filled,
+    form.styled input[type="search"].watch.filled,
+    form.styled input[type="tel"].watch.filled,
+    form.styled input[type="time"].watch.filled,
+    form.styled input[type="url"].watch.filled,
+    form.styled input[type="week"].watch.filled,
+    form.styled select.watch.filled,
+    form.styled textarea.watch.filled {
       background: #FFCE54;
       color: #FFFFFF; }
     form.styled input[type="text"].watch:focus,
     form.styled input[type="email"].watch:focus,
-    form.styled input[type="password"].watch:focus {
+    form.styled input[type="password"].watch:focus,
+    form.styled input[type="date"].watch:focus,
+    form.styled input[type="color"].watch:focus,
+    form.styled input[type="datetime"].watch:focus,
+    form.styled input[type="datetime-local"].watch:focus,
+    form.styled input[type="month"].watch:focus,
+    form.styled input[type="number"].watch:focus,
+    form.styled input[type="range"].watch:focus,
+    form.styled input[type="search"].watch:focus,
+    form.styled input[type="tel"].watch:focus,
+    form.styled input[type="time"].watch:focus,
+    form.styled input[type="url"].watch:focus,
+    form.styled input[type="week"].watch:focus,
+    form.styled select.watch:focus,
+    form.styled textarea.watch:focus {
       border: 1px solid #FCBB42;
       color: #ffb808;
       background: #FFFFFF; }
   form.styled input[type="text"].error,
   form.styled input[type="email"].error,
-  form.styled input[type="password"].error {
+  form.styled input[type="password"].error,
+  form.styled input[type="date"].error,
+  form.styled input[type="color"].error,
+  form.styled input[type="datetime"].error,
+  form.styled input[type="datetime-local"].error,
+  form.styled input[type="month"].error,
+  form.styled input[type="number"].error,
+  form.styled input[type="range"].error,
+  form.styled input[type="search"].error,
+  form.styled input[type="tel"].error,
+  form.styled input[type="time"].error,
+  form.styled input[type="url"].error,
+  form.styled input[type="week"].error,
+  form.styled select.error,
+  form.styled textarea.error {
     border: 1px solid #ED5565;
     color: #ED5565; }
     form.styled input[type="text"].error.filled,
     form.styled input[type="email"].error.filled,
-    form.styled input[type="password"].error.filled {
+    form.styled input[type="password"].error.filled,
+    form.styled input[type="date"].error.filled,
+    form.styled input[type="color"].error.filled,
+    form.styled input[type="datetime"].error.filled,
+    form.styled input[type="datetime-local"].error.filled,
+    form.styled input[type="month"].error.filled,
+    form.styled input[type="number"].error.filled,
+    form.styled input[type="range"].error.filled,
+    form.styled input[type="search"].error.filled,
+    form.styled input[type="tel"].error.filled,
+    form.styled input[type="time"].error.filled,
+    form.styled input[type="url"].error.filled,
+    form.styled input[type="week"].error.filled,
+    form.styled select.error.filled,
+    form.styled textarea.error.filled {
       background: #ED5565;
       color: #FFFFFF; }
     form.styled input[type="text"].error:focus,
     form.styled input[type="email"].error:focus,
-    form.styled input[type="password"].error:focus {
+    form.styled input[type="password"].error:focus,
+    form.styled input[type="date"].error:focus,
+    form.styled input[type="color"].error:focus,
+    form.styled input[type="datetime"].error:focus,
+    form.styled input[type="datetime-local"].error:focus,
+    form.styled input[type="month"].error:focus,
+    form.styled input[type="number"].error:focus,
+    form.styled input[type="range"].error:focus,
+    form.styled input[type="search"].error:focus,
+    form.styled input[type="tel"].error:focus,
+    form.styled input[type="time"].error:focus,
+    form.styled input[type="url"].error:focus,
+    form.styled input[type="week"].error:focus,
+    form.styled select.error:focus,
+    form.styled textarea.error:focus {
       border: 1px solid #DA4453;
       color: #de182c;
       background: #FFFFFF; }
+
+form.styled select {
+  padding: 5px 3px; }
+
+form.styled input[type="checkbox"],
+form.styled input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle; }
 
 .button,
 .button:link

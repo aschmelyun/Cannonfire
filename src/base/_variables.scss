@@ -94,16 +94,6 @@ $color-watch-alt:               $yellow-dark;
 $color-success:                 $green-light;
 $color-success-alt:             $green-dark;
 
-// = CTAs
-$intro-padding:                 128px 0;
-$intro-text-shadow:             0 1px 1px rgba(0, 0, 0, 0.35);
-$intro-background-image:        'https://ununsplash.imgix.net/reserve/xpdPwXTASnOUXFpIPgDs_IMG_1460_edt.jpg?q=75&fm=jpg&s=14f08c0d844035df3c9fea8705d4c38c';
-$intro-background-repeat:       no-repeat;
-$intro-background-position:     center center;
-$intro-gradient-from:           #ccc;
-$intro-gradient-to:             #999;
-$cta-padding:                   1em 0;
-
 // = Font families and sizes
 $font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-main:                14px;
@@ -111,7 +101,7 @@ $font-color:					$darkgrey-dark;
 
 // = Forms and inputs
 $input-padding:                 6px 8px;
-$input-margin:                  0 0 8px;
+$input-select-padding:			5px 3px;
 $input-border-radius:           3px;
 $input-label-font-size:         ($font-size-main * 0.85);
 $input-label-font-weight:       700;
@@ -121,6 +111,7 @@ $input-label-color:             darken($color-secondary-alt, 15%);
 $input-row-spacing:				0 0 8px;
 
 // = Grids and rows
+$grid-gutter-margin:			4%;
 $row-vertical-spacing:          36px;
 
 // = Headings

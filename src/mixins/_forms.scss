@@ -1,12 +1,27 @@
 @mixin make-inputs() {
 	input[type="text"],
 	input[type="email"],
-	input[type="password"] {
+	input[type="password"],
+	input[type="date"],
+	input[type="color"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="number"],
+	input[type="range"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	input[type="week"],
+	select,
+	textarea {
 		padding: $input-padding;
 		border: 1px solid $color-secondary;
 		-webkit-border-radius: $input-border-radius;
 		-moz-border-radius: $input-border-radius;
 		border-radius: $input-border-radius;
+		background: $white;
 
 		&.filled {
 			background: $color-secondary;
@@ -84,5 +99,15 @@
 				background: $white;
 			}
 		}
+	}
+
+	select {
+		padding: $input-select-padding;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
