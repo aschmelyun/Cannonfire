@@ -1,12 +1,24 @@
-.uc {
+.t-uc {
 	text-transform: uppercase;
 }
-.it,
+.t-it,
 i {
 	font-style: italic;
 }
-.bd,
+.t-bd,
 b,
 strong {
 	font-weight: 700;
+}
+.t-tn {
+	font-size: $font-size-mini;
+}
+.t-sm {
+	font-size: $font-size-small;
+}
+.t-lg {
+	font-size: $font-size-large;
+}
+.t-hg {
+	font-size: $font-size-huge;
 }

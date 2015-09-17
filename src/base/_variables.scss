@@ -98,12 +98,16 @@ $color-success-alt:             $green-dark;
 $font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-main:                14px;
 $font-color:					$darkgrey-dark;
+$font-size-mini:				($font-size-main * 0.75);
+$font-size-small:				($font-size-main * 0.85);
+$font-size-large:				($font-size-main * 1.25);
+$font-size-huge:				($font-size-main * 1.5);
 
 // = Forms and inputs
 $input-padding:                 6px 8px;
 $input-select-padding:			5px 3px;
 $input-border-radius:           3px;
-$input-label-font-size:         ($font-size-main * 0.85);
+$input-label-font-size:         $font-size-small;
 $input-label-font-weight:       700;
 $input-label-text-transform:    uppercase;
 $input-label-width:				25%;
