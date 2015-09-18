@@ -1,0 +1,55 @@
+nav {
+
+	&.fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&.primary {
+		background: $menu-background-primary;
+		color: $menu-color-primary;
+
+		ul li a:hover {
+			background: darken($menu-background-primary, 10%);
+		}
+
+		ul li a:active {
+			background: darken($menu-background-primary, 15%);
+		}
+	}
+
+	&.secondary {
+		background: $menu-background-secondary;
+		color: $menu-color-secondary;
+
+		ul li a:hover {
+			background: darken($menu-background-secondary, 10%);
+		}
+
+		ul li a:active {
+			background: darken($menu-background-secondary, 15%);
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			list-style-type: none;
+			display: inline-block;
+			font-size: 0;
+
+			a {
+				text-decoration: none;
+				color: inherit;
+				display: inline-block;
+				font-size: $menu-font-size;
+				padding: $menu-padding;
+			}
+		}
+	}
+}

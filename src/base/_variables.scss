@@ -134,14 +134,15 @@ $default-margin-normal:         8px;
 $default-margin-large:          16px;
 $default-margin-huge:           32px;
 
-// = Navigation
-$navigation-padding:            12px 32px 12px 0;
-$navigation-border:             1px solid $color-secondary;
-$navigation-font-size:          1.15em;
-$navigation-font-weight:        normal;
-$navigation-font-color:         $color-secondary-alt;
-$navigation-font-color-hover:   $color-primary;
-$navigation-font-color-active:  $color-primary;
+// = Menus
+$menu-color-primary:			$white;
+$menu-background-primary:		$color-primary;
+$menu-color-secondary:			$font-color;
+$menu-background-secondary:		$color-secondary;
+$menu-padding:					12px 0;
+$menu-font-size:				$font-size-small;
+$menu-hover-background:			rgba(0,0,0,0.1);
+$menu-active-background:		rgba(0,0,0,0.15);
 
 // = Paddings
 $default-padding-small:          4px;

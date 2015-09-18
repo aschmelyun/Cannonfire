@@ -758,6 +758,43 @@ form.styled input[type="radio"] {
   display: inline-block;
   vertical-align: middle; }
 
+nav.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+nav.primary {
+  background: #4FC1E9;
+  color: #FFFFFF; }
+  nav.primary ul li a:hover {
+    background: #22b1e3; }
+  nav.primary ul li a:active {
+    background: #1aa2d1; }
+
+nav.secondary {
+  background: #CCD1D9;
+  color: #434A54; }
+  nav.secondary ul li a:hover {
+    background: #afb7c3; }
+  nav.secondary ul li a:active {
+    background: #a0a9b8; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 0; }
+    nav ul li a {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      font-size: 11.9px;
+      padding: 12px 0; }
+
 .button,
 .button:link
 .button:visited {
