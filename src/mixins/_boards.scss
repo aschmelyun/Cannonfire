@@ -1,4 +1,4 @@
-@mixin make-board {
+@mixin make-board() {
 	padding: $board-padding;
 	-webkit-border-radius: $board-border-radius;
 	-moz-border-radius: $board-border-radius;

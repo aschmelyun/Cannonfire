@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0 0.33em;
+	font-weight: inherit;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+$font-sizes: 3.157em 2.369em 1.777em 1.333em 1em 0.75em;
+
+@each $font-size in $font-sizes {
+	$i: index($font-sizes, $font-size);
+	h#{$i} {
+		@include make-heading($font-size);
+	}
+}
