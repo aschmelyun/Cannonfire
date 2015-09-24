@@ -4,25 +4,29 @@
   
     &.fixed {
         width: 100%;
+
+        @include scale-to('tablet') {
+            max-width: $grid-fixed-width-s;
+        }
   	
         @include scale-to('desktop-small') {
-            max-width: 960px;
+            max-width: $grid-fixed-width-m;
         }
   	
         @include scale-to('desktop-large') {
-            max-width: 1160px;
+            max-width: $grid-fixed-width-l;
         }
     }
   
     &.fluid {
         width: 100%;
   	
-        @include scale-to('desktop-small') {
-  		    width: 94%;
+        @include scale-to('tablet') {
+  		    width: $grid-fluid-width-s;
         }
   	
         @include scale-to('desktop-large') {
-            width: 90%;
+            width: $grid-fluid-width-l;
         }
     }
 }

@@ -1,0 +1,19 @@
+.board {
+	@include make-board();
+
+	&.outline {
+		border: $board-border;
+	}
+
+	&.shadow {
+		-webkit-box-shadow: $board-box-shadow;
+		-moz-box-shadow: $board-box-shadow;
+		box-shadow: $board-box-shadow;
+	}
+
+	&.no-radius {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+}

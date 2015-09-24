@@ -1,43 +1,9 @@
 /*
  * Variables used throughout Cannonfire
- * organized by categories and
- * listed alphabetically
+ * organized by categories and listed alphabetically
+ * (except for colors, they come first)
+ *
  */
-
-// = Alerts
-$alert-border-radius:           3px;
-$alert-padding:                 0 0 0 16px;
-$alert-font-size:               15px;
-$alert-height:                  52px;
-
-// = Alignment
-$alignment-margin:              8px;
-
-// = Breakpoints
-$break-mobile:                  480px;
-$break-tablet:                  768px;
-$break-desktop-small:           992px;
-$break-desktop-large:           1200px;
-
-// = Buttons
-$button-padding:                6px 16px;
-$button-font-size:              13px;
-$button-font-weight:            bold;
-$button-border-radius:          3px;
-$button-text-decoration:        none;
-$button-text-shadow:            0 1px 1px rgba( 0, 0, 0, 0.25 );
-
-$button-padding-mini:           2px 6px;
-$button-font-size-mini:         11px;
-
-$button-padding-small:          4px 10px;
-$button-font-size-small:        11px;
-
-$button-padding-large:          10px 24px;
-$button-font-size-large:        15px;
-
-$button-padding-huge:           16px 32px;
-$button-font-size-huge:         17px;
 
 // = Colors
 $white:                         #FFFFFF;
@@ -94,6 +60,47 @@ $color-watch-alt:               $yellow-dark;
 $color-success:                 $green-light;
 $color-success-alt:             $green-dark;
 
+// = Alerts
+$alert-border-radius:           3px;
+$alert-padding:                 0 0 0 16px;
+$alert-font-size:               15px;
+$alert-height:                  52px;
+
+// = Alignment
+$alignment-margin:              8px;
+
+// = Boards
+$board-padding:					16px;
+$board-border-radius:			7px;
+$board-box-shadow:				0 1px 5px rgba( 0, 0, 0, 0.35 );
+$board-border:					1px solid $color-secondary;
+
+// = Breakpoints
+$break-mobile:                  480px;
+$break-tablet:                  768px;
+$break-desktop-small:           992px;
+$break-desktop-large:           1200px;
+
+// = Buttons
+$button-padding:                6px 16px;
+$button-font-size:              13px;
+$button-font-weight:            bold;
+$button-border-radius:          3px;
+$button-text-decoration:        none;
+$button-text-shadow:            0 1px 1px rgba( 0, 0, 0, 0.25 );
+
+$button-padding-mini:           2px 6px;
+$button-font-size-mini:         11px;
+
+$button-padding-small:          4px 10px;
+$button-font-size-small:        11px;
+
+$button-padding-large:          10px 24px;
+$button-font-size-large:        15px;
+
+$button-padding-huge:           16px 32px;
+$button-font-size-huge:         17px;
+
 // = Font families and sizes
 $font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-main:                14px;
@@ -115,6 +122,11 @@ $input-label-color:             darken($color-secondary-alt, 15%);
 $input-row-spacing:				0 0 8px;
 
 // = Grids and rows
+$grid-fixed-width-l:			1160px;
+$grid-fixed-width-m:			960px;
+$grid-fixed-width-s:			740px;
+$grid-fluid-width-l:			90%;
+$grid-fluid-width-s:			96%;
 $grid-gutter-margin:			4%;
 $row-vertical-spacing:          36px;
 

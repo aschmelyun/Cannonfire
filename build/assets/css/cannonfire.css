@@ -6,8 +6,9 @@
  */
 /*
  * Variables used throughout Cannonfire
- * organized by categories and
- * listed alphabetically
+ * organized by categories and listed alphabetically
+ * (except for colors, they come first)
+ *
  */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -51,6 +52,9 @@ table {
   margin: 0 auto; }
   .wrapper.fixed {
     width: 100%; }
+    @media screen and (min-width: 768px) {
+      .wrapper.fixed {
+        max-width: 740px; } }
     @media screen and (min-width: 992px) {
       .wrapper.fixed {
         max-width: 960px; } }
@@ -59,9 +63,9 @@ table {
         max-width: 1160px; } }
   .wrapper.fluid {
     width: 100%; }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       .wrapper.fluid {
-        width: 94%; } }
+        width: 96%; } }
     @media screen and (min-width: 1200px) {
       .wrapper.fluid {
         width: 90%; } }
@@ -941,6 +945,35 @@ strong {
 
 .padded-xl {
   padding: 32px; }
+
+.padded-tb {
+  padding: 8px 0; }
+
+.padded-lr {
+  padding: 0 8px; }
+
+.board {
+  padding: 16px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  float: left;
+  min-height: 1px; }
+  .board + .board {
+    margin-left: 0; }
+    @media screen and (min-width: 768px) {
+      .board + .board {
+        margin-left: 4%; } }
+  .board.outline {
+    border: 1px solid #CCD1D9; }
+  .board.shadow {
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35); }
+  .board.no-radius {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
 
 .color-white {
   color: #FFFFFF; }
