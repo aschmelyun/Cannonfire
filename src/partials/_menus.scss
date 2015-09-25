@@ -1,5 +1,7 @@
 nav {
 
+	font-size: 0;
+
 	&.fixed {
 		position: fixed;
 		width: 100%;
@@ -8,29 +10,12 @@ nav {
 	}
 
 	&.primary {
-		background: $menu-background-primary;
-		color: $menu-color-primary;
-
-		ul li a:hover {
-			background: darken($menu-background-primary, 10%);
-		}
-
-		ul li a:active {
-			background: darken($menu-background-primary, 15%);
-		}
+		@include make-menu-items($menu-background-primary, $menu-color-primary);
 	}
 
 	&.secondary {
-		background: $menu-background-secondary;
-		color: $menu-color-secondary;
 
-		ul li a:hover {
-			background: darken($menu-background-secondary, 10%);
-		}
-
-		ul li a:active {
-			background: darken($menu-background-secondary, 15%);
-		}
+		@include make-menu-items($menu-background-secondary, $menu-color-secondary);
 	}
 
 	ul {

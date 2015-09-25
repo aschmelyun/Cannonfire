@@ -1,0 +1,12 @@
+@mixin make-menu-items($menu-background, $menu-color) {
+	background: $menu-background;
+	color: $menu-color;
+
+	ul li a:hover {
+		background: darken($menu-background, 10%);
+	}
+
+	ul li a:active {
+		background: darken($menu-background, 15%);
+	}
+}
