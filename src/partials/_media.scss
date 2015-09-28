@@ -1,0 +1,26 @@
+img {
+
+    &.rounded {
+        -webkit-border-radius: $img-rounded-radius;
+        -moz-border-radius: $img-rounded-radius;
+        border-radius: $img-rounded-radius;
+    }
+
+    &.circular {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    &.framed {
+        background: $img-framed-background;
+        border: $img-framed-border;
+        padding: $img-framed-padding;
+    }
+}
+
+.thumbnail {
+    width: 100%;
+    border: $thumbnail-border;
+    padding: $thumbnail-padding;
+}
