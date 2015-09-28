@@ -48,55 +48,6 @@ ul {
 	}
 
 	&.fancy {
-		margin: $list-fancy-margin;
-		list-style: none;
-
-		li {
-			display: block;
-			padding: $list-fancy-padding;
-			border-bottom: $list-fancy-border $list-fancy-border-color;
-			border-right: $list-fancy-border $list-fancy-border-color;
-			border-left: $list-fancy-border $list-fancy-border-color;
-
-			&:first-child {
-				border-top: $list-fancy-border $list-fancy-border-color;
-				-webkit-border-top-left-radius: $list-fancy-border-radius;
-				-webkit-border-top-right-radius: $list-fancy-border-radius;
-				-moz-border-radius-topleft: $list-fancy-border-radius;
-				-moz-border-radius-topright: $list-fancy-border-radius;
-				border-top-left-radius: $list-fancy-border-radius;
-				border-top-right-radius: $list-fancy-border-radius;
-			}
-
-			&:last-child {
-				-webkit-border-bottom-right-radius: $list-fancy-border-radius;
-				-webkit-border-bottom-left-radius: $list-fancy-border-radius;
-				-moz-border-radius-bottomright: $list-fancy-border-radius;
-				-moz-border-radius-bottomleft: $list-fancy-border-radius;
-				border-bottom-right-radius: $list-fancy-border-radius;
-				border-bottom-left-radius: $list-fancy-border-radius;
-			}
-
-			&.active,
-			&.primary,
-			&.disabled,
-			&.secondary {
-				margin-top: -1px;
-			}
-
-			&.active,
-			&.primary {
-				background: $color-primary;
-				color: $white;
-				border-color: $color-primary;
-			}
-
-			&.disabled,
-			&.secondary {
-				background: $color-secondary;
-				color: $white;
-				border-bottom: $list-fancy-border $color-secondary;
-			}
-		}
+		@include make-list-fancy();
 	}
 }

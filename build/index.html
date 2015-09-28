@@ -254,7 +254,7 @@
 				<h2>Text</h2>
 				<div class="row">
 					<h4>Paragraphs and styles</h4>
-					<p>This is how a typical paragraph or block of text is formatted in Cannonfire. There's also a few handy classes included that you can use to <span class="t-bd">bold (.t-bd)</span>, <span class="t-uc">capitalize (.t-uc)</span>, <span class="t-it">italicize (.t-it)</span>, or <span class="t-un">underline (.t-uc)</span> text within an element.</p>
+					<p>This is how a typical paragraph or block of text is formatted in Cannonfire. There's also a few handy classes included that you can use to <span class="t-bd">bold (.t-bd)</span>, <span class="t-uc">capitalize (.t-uc)</span>, <span class="t-it">italicize (.t-it)</span>, or <span class="t-un">underline (.t-un)</span> text within an element.</p>
 					<p class="t-mn">Add .t-mn to an element to render the font at a mini size.</p>
 					<p class="t-sm">Add .t-sm to an element to render the font at a small size.</p>
 					<p class="t-lg">Add .t-lg to an element to render the font at a large size.</p>
@@ -288,7 +288,33 @@
 				<h2>Media</h2>
 				<div class="row">
 					<h4>Images</h4>
-					
+					<p>Images themselves are rendered without any default customization, except for a max-width of 100% that prevents overflow. Cannonfire includes three classes that can be added to img elements. These are:
+					<div class="column span3 text-center">
+						<img src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img (no class)</p>
+					</div>
+					<div class="column span3 text-center">
+						<img class="rounded" src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img.rounded</p>
+					</div>
+					<div class="column span3 text-center">
+						<img class="circular" src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img.circular</p>
+					</div>
+					<div class="column span3 text-center">
+						<img class="framed" src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img.framed</p>
+					</div>
+				</div>
+				<div class="row">
+					<h4>Boards</h4>
+					<div class="board with-header outline span3">
+						<img class="board-header" src="assets/img/mountains.jpg" />
+						<div class="board-content">
+							<h3>Board Title</h3>
+							<p>This is an image used as a header for a board. Just add the <b>.with-header</b> class to the board which will remove the padding. Continue by adding an image with the class <b>.board-header</b> and content below can be included in a div with the class <b>.board-content</b>.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row spaced" id="menus">

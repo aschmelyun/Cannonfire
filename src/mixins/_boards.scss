@@ -13,4 +13,33 @@
             margin-left: $grid-gutter-margin;
         }
     }
+
+    &.with-header {
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+
+        > img.board-header {
+            -webkit-border-top-left-radius: $board-border-radius;
+            -webkit-border-top-right-radius: $board-border-radius;
+            -moz-border-radius-topleft: $board-border-radius;
+            -moz-border-radius-topright: $board-border-radius;
+            border-top-left-radius: $board-border-radius;
+            border-top-right-radius: $board-border-radius;
+        }
+
+        > .board-content {
+            margin-top: -4px;
+            line-height: $paragraph-line-height;
+            padding: $board-padding;
+            -webkit-border-bottom-left-radius: $board-border-radius;
+            -webkit-border-bottom-right-radius: $board-border-radius;
+            -moz-border-radius-bottomleft: $board-border-radius;
+            -moz-border-radius-bottomright: $board-border-radius;
+            border-bottom-left-radius: $board-border-radius;
+            border-bottom-right-radius: $board-border-radius;
+        }
+        
+    }
 }

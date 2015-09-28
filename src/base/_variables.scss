@@ -70,7 +70,7 @@ $alert-height:                  52px;
 $alignment-margin:              8px;
 
 // = Boards
-$board-padding:					16px;
+$board-padding:					0.75em 1.5em;
 $board-border-radius:			7px;
 $board-box-shadow:				0 1px 5px rgba( 0, 0, 0, 0.35 );
 $board-border:					1px solid $color-secondary;
@@ -135,10 +135,12 @@ $heading-margin:                4px 0 12px;
 
 
 // = Images and media
-$thumbnail-background:          $white;
-$thumbnail-padding:             5px;
-$thumbnail-border-radius:       3px;
-$thumbnail-bordered-border:     1px solid $color-secondary;
+$img-rounded-radius:			7px;
+$img-framed-background:			$white;
+$img-framed-border:				1px solid $color-secondary;
+$img-framed-padding:			7px;
+$thumbnail-border:				1px solid $color-secondary;
+$thumbnail-padding:				12px;
 
 // = Margins
 $default-margin-small:          4px;
