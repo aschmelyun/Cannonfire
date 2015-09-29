@@ -454,6 +454,66 @@ img {
   border: 1px solid #CCD1D9;
   padding: 12px; }
 
+table {
+  width: 100%;
+  color: #656D78; }
+  table thead {
+    text-align: left;
+    font-weight: bold;
+    background: #E6E9ED;
+    color: #434A54; }
+  table td,
+  table th {
+    padding: 0.5em 0.75em;
+    border-left: 1px solid #CCD1D9; }
+    table td:first-child,
+    table th:first-child {
+      border-left: none; }
+  table.bordered {
+    border: 1px solid #CCD1D9; }
+  table.horiz tr:last-child > td {
+    border-bottom: none; }
+  table.horiz td {
+    border-left: none;
+    border-bottom: 1px solid #CCD1D9; }
+  table.horiz th {
+    border-left: none; }
+  table.grid tr:last-child > td {
+    border-bottom: none; }
+  table.grid td,
+  table.grid th {
+    border-bottom: 1px solid #CCD1D9; }
+
+table.primary {
+  width: 100%;
+  color: #656D78; }
+  table.primary thead {
+    text-align: left;
+    font-weight: bold;
+    background: #4FC1E9;
+    color: #FFFFFF; }
+  table.primary td,
+  table.primary th {
+    padding: 0.5em 0.75em;
+    border-left: 1px solid #CCD1D9; }
+    table.primary td:first-child,
+    table.primary th:first-child {
+      border-left: none; }
+  table.primary.bordered {
+    border: 1px solid #CCD1D9; }
+  table.primary.horiz tr:last-child > td {
+    border-bottom: none; }
+  table.primary.horiz td {
+    border-left: none;
+    border-bottom: 1px solid #CCD1D9; }
+  table.primary.horiz th {
+    border-left: none; }
+  table.primary.grid tr:last-child > td {
+    border-bottom: none; }
+  table.primary.grid td,
+  table.primary.grid th {
+    border-bottom: 1px solid #CCD1D9; }
+
 form.styled input,
 form.styled select,
 form.styled textarea {
@@ -906,6 +966,129 @@ nav ul {
       .button.secondary.outline:focus,
       .button:link
 .button:visited.secondary.outline:focus {
+        outline: 0;
+        outline: none; }
+  .button.success,
+  .button:link
+.button:visited.success {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 6px 16px;
+    background: #A0D468; }
+    .button.success:hover,
+    .button:link
+.button:visited.success:hover {
+      background: #87c940; }
+    .button.success:active,
+    .button:link
+.button:visited.success:active {
+      background: #7aba35; }
+    .button.success:focus,
+    .button:link
+.button:visited.success:focus {
+      outline: 0;
+      outline: none; }
+    .button.success.outline,
+    .button:link
+.button:visited.success.outline {
+      background: none;
+      color: #A0D468;
+      border: 1px solid #A0D468; }
+      .button.success.outline:hover,
+      .button:link
+.button:visited.success.outline:hover {
+        border-color: #87c940;
+        color: #87c940; }
+      .button.success.outline:active,
+      .button:link
+.button:visited.success.outline:active {
+        border-color: #7aba35;
+        color: #7aba35; }
+      .button.success.outline:focus,
+      .button:link
+.button:visited.success.outline:focus {
+        outline: 0;
+        outline: none; }
+  .button.watch,
+  .button:link
+.button:visited.watch {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 6px 16px;
+    background: #FFCE54; }
+    .button.watch:hover,
+    .button:link
+.button:visited.watch:hover {
+      background: #ffbf21; }
+    .button.watch:active,
+    .button:link
+.button:visited.watch:active {
+      background: #ffb808; }
+    .button.watch:focus,
+    .button:link
+.button:visited.watch:focus {
+      outline: 0;
+      outline: none; }
+    .button.watch.outline,
+    .button:link
+.button:visited.watch.outline {
+      background: none;
+      color: #FFCE54;
+      border: 1px solid #FFCE54; }
+      .button.watch.outline:hover,
+      .button:link
+.button:visited.watch.outline:hover {
+        border-color: #ffbf21;
+        color: #ffbf21; }
+      .button.watch.outline:active,
+      .button:link
+.button:visited.watch.outline:active {
+        border-color: #ffb808;
+        color: #ffb808; }
+      .button.watch.outline:focus,
+      .button:link
+.button:visited.watch.outline:focus {
+        outline: 0;
+        outline: none; }
+  .button.error,
+  .button:link
+.button:visited.error {
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 6px 16px;
+    background: #ED5565; }
+    .button.error:hover,
+    .button:link
+.button:visited.error:hover {
+      background: #e8273b; }
+    .button.error:active,
+    .button:link
+.button:visited.error:active {
+      background: #de182c; }
+    .button.error:focus,
+    .button:link
+.button:visited.error:focus {
+      outline: 0;
+      outline: none; }
+    .button.error.outline,
+    .button:link
+.button:visited.error.outline {
+      background: none;
+      color: #ED5565;
+      border: 1px solid #ED5565; }
+      .button.error.outline:hover,
+      .button:link
+.button:visited.error.outline:hover {
+        border-color: #e8273b;
+        color: #e8273b; }
+      .button.error.outline:active,
+      .button:link
+.button:visited.error.outline:active {
+        border-color: #de182c;
+        color: #de182c; }
+      .button.error.outline:focus,
+      .button:link
+.button:visited.error.outline:focus {
         outline: 0;
         outline: none; }
   .button.mini,

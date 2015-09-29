@@ -328,6 +328,92 @@
 			</div>
 			<div class="row spaced" id="tables">
 				<h2>Tables</h2>
+				<div class="row">
+					<div class="column span6">
+						<p>Tables take up the entire width of the parent container. Below is the default table appearance, without any classes added to it.
+						<table>
+							<thead>
+								<tr>
+									<th>Select</th>
+									<th>Brand</th>
+									<th>Model</th>
+									<th>Year</th>
+									<th>Milage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" name="cars" id="cars_1" /></td>
+									<td>Chevrolet</td>
+									<td>Impala</td>
+									<td>1964</td>
+									<td>125,230</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="cars" id="cars_2" /></td>
+									<td>Audi</td>
+									<td>R8</td>
+									<td>2014</td>
+									<td>14,564</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="cars" id="cars_3" /></td>
+									<td>Ford</td>
+									<td>Ranger</td>
+									<td>2000</td>
+									<td>202,355</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>The classes that can be used to manipulate table styles are:
+							<ul>
+								<li><b>.bordered</b> - Gives a border around the entire table</li>
+								<li><b>.horiz</b> - Swaps out the vertical borders around each cell for a horizontal border at the bottom of each row</li>
+								<li><b>.grid</b> - Borders around each cell in a grid pattern</li>
+						</p>
+					</div>
+				</div>
+				<div class="row spaced">
+					<div class="column span6">
+						<p>Here we added a <b>.bordered</b> and a <b>.grid</b> class to the table element to achieve the following result:</p>
+						<table class="bordered grid">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Username</th>
+									<th>Email Address</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>aschmelyun</td>
+									<td>me@aschmelyun.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>john_doe</td>
+									<td>jdoe@testaddress.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>janedoe89</td>
+									<td>jane_doe8989@yahoo.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>another_username</td>
+									<td>test_address@domaintaken.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

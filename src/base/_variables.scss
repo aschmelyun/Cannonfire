@@ -177,7 +177,11 @@ $list-fancy-border-color:		$color-secondary;
 $list-fancy-border-radius:		7px;
 
 // = Tables
-$table-padding:                 12px 16px;
+$table-border-color:			$color-secondary;
+$table-head-background:			$lightgrey-dark;
+$table-head-color:				$darkgrey-dark;
+$table-color:					$darkgrey-light;
+$table-row-padding:				0.5em 0.75em;
 
 // = Typography
 $default-line-height:           0.75em;

@@ -23,6 +23,30 @@
 		}
 	}
 
+	&.success {
+		@include make-button($white, $button-font-size, $button-padding, $color-success);
+
+		&.outline {
+			@include make-button-outline($color-success);
+		}
+	}
+
+	&.watch {
+		@include make-button($white, $button-font-size, $button-padding, $color-watch);
+
+		&.outline {
+			@include make-button-outline($color-watch);
+		}
+	}
+
+	&.error {
+		@include make-button($white, $button-font-size, $button-padding, $color-error);
+
+		&.outline {
+			@include make-button-outline($color-error);
+		}
+	}
+
 	&.mini {
 		@include make-button-size($button-font-size-mini, $button-padding-mini);
 	}
