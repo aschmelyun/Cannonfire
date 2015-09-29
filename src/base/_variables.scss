@@ -67,7 +67,8 @@ $alert-font-size:               15px;
 $alert-height:                  52px;
 
 // = Alignment
-$alignment-margin:              8px;
+$align-left-margin:				0 1em 1em 0;
+$align-right-margin:			0 0 1em 1em;
 
 // = Boards
 $board-padding:					0.75em 1.5em;
@@ -142,6 +143,13 @@ $img-framed-padding:			7px;
 $thumbnail-border:				1px solid $color-secondary;
 $thumbnail-padding:				12px;
 
+// = Intros
+$intro-background-image:		url('../img/background.jpg');
+$intro-color:					$white;
+$intro-width:					100%;
+$intro-height:					540px;
+$intro-padding:					7em 5%;
+
 // = Margins
 $default-margin-small:          4px;
 $default-margin-normal:         8px;
@@ -187,7 +195,7 @@ $table-row-padding:				0.5em 0.75em;
 // = Typography
 $default-line-height:           0.75em;
 $line-height-main:              20px;
-$default-text-shadow:           0 1px 1px rgba(0,0,0,0.25);
+$text-shadow-default:           0 1px 1px rgba(0,0,0,0.25);
 $pre-background:				$lightgrey-light;
 $pre-color:						$darkgrey-light;
 $pre-border:					1px solid $color-secondary;

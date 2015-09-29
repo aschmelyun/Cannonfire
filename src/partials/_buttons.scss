@@ -47,6 +47,14 @@
 		}
 	}
 
+	&.white {
+		@include make-button($darkgrey-dark, $button-font-size, $button-padding, $white);
+
+		&.outline {
+			@include make-button-outline($white);
+		}
+	}
+
 	&.mini {
 		@include make-button-size($button-font-size-mini, $button-padding-mini);
 	}

@@ -1,9 +1,11 @@
 @mixin make-alignments() {
 	.align-right {
 		float: right;
+		margin: $align-right-margin;
 	}
 	.align-left {
 		float: left;
+		margin: $align-left-margin;
 	}
 	.align-center {
 		margin-left: auto;

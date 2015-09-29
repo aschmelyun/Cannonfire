@@ -416,10 +416,12 @@ body {
   color: #434A54; }
 
 .align-right {
-  float: right; }
+  float: right;
+  margin: 0 0 1em 1em; }
 
 .align-left {
-  float: left; }
+  float: left;
+  margin: 0 1em 1em 0; }
 
 .align-center {
   margin-left: auto;
@@ -867,7 +869,8 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: 9999; }
   nav.no-border {
     border-bottom: none; }
 
@@ -1128,6 +1131,47 @@ nav.secondary {
 .button:visited.error.outline:focus {
         outline: 0;
         outline: none; }
+  .button.white,
+  .button:link
+.button:visited.white {
+    color: #434A54;
+    font-size: 13px;
+    padding: 6px 16px;
+    background: #FFFFFF; }
+    .button.white:hover,
+    .button:link
+.button:visited.white:hover {
+      background: #e6e6e6; }
+    .button.white:active,
+    .button:link
+.button:visited.white:active {
+      background: #d9d9d9; }
+    .button.white:focus,
+    .button:link
+.button:visited.white:focus {
+      outline: 0;
+      outline: none; }
+    .button.white.outline,
+    .button:link
+.button:visited.white.outline {
+      background: none;
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF; }
+      .button.white.outline:hover,
+      .button:link
+.button:visited.white.outline:hover {
+        border-color: #e6e6e6;
+        color: #e6e6e6; }
+      .button.white.outline:active,
+      .button:link
+.button:visited.white.outline:active {
+        border-color: #d9d9d9;
+        color: #d9d9d9; }
+      .button.white.outline:focus,
+      .button:link
+.button:visited.white.outline:focus {
+        outline: 0;
+        outline: none; }
   .button.mini,
   .button:link
 .button:visited.mini {
@@ -1179,6 +1223,9 @@ small {
 
 .t-hg {
   font-size: 21px; }
+
+.t-sh {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
 
 p {
   margin: 1em 0;
@@ -1300,6 +1347,19 @@ h6 {
 
 .padded-lr {
   padding: 0 8px; }
+
+.intro {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.intro.default {
+  position: relative;
+  background-image: url("../img/background.jpg");
+  color: #FFFFFF;
+  width: 100%;
+  height: 540px;
+  padding: 7em 5%; }
 
 .board {
   padding: 0.75em 1.5em;

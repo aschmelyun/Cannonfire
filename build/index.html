@@ -8,6 +8,7 @@
 	<body>
 		<nav class="fixed text-center primary no-border">
 			<ul>
+				<li><a href="#intro">Intro</a></li>
 				<li><a href="#wrappers">Wrappers</a></li>
 				<li><a href="#grid">Grid</a></li>
 				<li><a href="#media_queries">Media Queries</a></li>
@@ -16,13 +17,21 @@
 				<li><a href="#forms">Forms</a></li>
 				<li><a href="#headings">Headings</a></li>
 				<li><a href="#text">Text</a></li>
-				<li><a href="#intro">Intro</a></li>
 				<li><a href="#media">Media</a></li>
 				<li><a href="#menus">Menus</a></li>
 				<li><a href="#positions">Positions</a></li>
 				<li><a href="#tables">Tables</a></li>
 			</ul>
 		</nav>
+		<div class="intro default text-center t-sh">
+			<h1 class="t-bd">This is Cannonfire</h1>
+			<h3>Use it to rapidly prototype websites and web application front-ends</h3>
+			<div class="row spaced">&nbsp;</div>
+			<div class="row spaced">
+				<a class="button huge primary" href="http://github.com/aschmelyun/cannonfire"><i class="fa fa-github"></i> Check it out on GitHub</a>
+				<h6>Current version: <b>2.0.0</b></h6>
+			</div>
+		</div>
 		<div class="wrapper fluid">
 			<div class="row spaced" id="wrappers">
 				<h2>Wrappers</h2>
@@ -168,6 +177,7 @@
 					<li><b>@include scale-to('desktop-small') {}</b> - Variable for breakpoint is $break-desktop-small (default is 992px)</li>
 					<li><b>@include scale-to('desktop-large') {}</b> - Variable for breakpoint is $break-desktop-large (default is 1200px)</li>
 				</ul>
+				<p>&nbsp;</p>
 				<h4>Example</h4>
 				<pre class="span6">
 .page-content {
@@ -300,9 +310,6 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row spaced" id="intro">
-				<h2>Intro</h2>
-			</div>
 			<div class="row spaced" id="media">
 				<h2>Media</h2>
 				<div class="row">
@@ -367,6 +374,26 @@
 			</div>
 			<div class="row spaced" id="positions">
 				<h2>Positions</h2>
+				<div class="row">
+					<div class="column span4">
+						<p>You can align text to the right by using <b>.text-right</b></p>
+						<p class="text-right t-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper rhoncus dui, a vestibulum sem eleifend non. Cras commodo est vitae mi vehicula rhoncus. Phasellus id nulla eu felis egestas vestibulum id a lacus. Vivamus sit amet arcu quis lectus rhoncus accumsan. Integer ullamcorper elit eu laoreet facilisis.</p>
+					</div>
+					<div class="column span4">
+						<p>You can also align text to the center by using <b>.text-center</b></p>
+						<p class="text-center t-sm">Praesent aliquet, erat in tempus interdum, lorem dolor vestibulum mauris, luctus laoreet nisi dolor malesuada enim. Mauris sed turpis erat. Nullam lobortis convallis rutrum. Quisque a tristique nunc. In ullamcorper commodo purus. In molestie hendrerit lorem, et consequat nunc auctor non. Vestibulum sit amet cursus magna, a tempor justo.</p>
+					</div>
+				</div>
+				<div class="row spaced">
+					<div class="column span8">
+						<p>Images can also be aligned to the left or right by adding the classes <b>.align-left</b> or <b>.align-right</b> to the img element.</p>
+						<p>
+							<img class="align-left rounded" src="assets/img/doggy.png" />
+							Integer lobortis fringilla enim, non fringilla neque varius eu. Nam sed arcu diam. Phasellus ultrices tempus eros. Aenean condimentum purus in quam ullamcorper, ac lobortis nisi ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus enim lorem, accumsan vel interdum in, finibus in lorem. Nunc a sem volutpat, ultricies risus et, sodales tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent et luctus orci. Donec ac massa feugiat, sodales lacus nec, ullamcorper risus. Curabitur viverra condimentum purus, ut consequat augue congue et. Ut tincidunt massa sapien, malesuada lacinia lectus euismod vitae.<br /><br />
+							Maecenas euismod mattis condimentum. Integer fermentum nisl id tellus hendrerit, id luctus ante sodales. Donec volutpat nunc non eleifend placerat. Sed eget ante feugiat nunc finibus pulvinar sed ac libero. Pellentesque luctus ante at congue commodo. Suspendisse molestie orci a blandit aliquam. Vivamus maximus massa ac velit ullamcorper, nec faucibus nisi pulvinar. Nam pellentesque vitae arcu et posuere. Nam est lorem, molestie a lacus a, porttitor maximus neque. Sed in mattis ante, ac ultricies lacus. Etiam a purus sit amet risus ornare faucibus. Nam dapibus aliquet tellus ut ornare. Nam eu enim tellus.
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="row spaced" id="tables">
 				<h2>Tables</h2>

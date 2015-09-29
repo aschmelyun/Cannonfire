@@ -29,6 +29,9 @@ small {
 .t-hg {
 	font-size: $font-size-huge;
 }
+.t-sh {
+	text-shadow: $text-shadow-default;
+}
 p {
 	margin: $paragraph-margin;
 	line-height: $paragraph-line-height;
