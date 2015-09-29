@@ -1248,6 +1248,16 @@ ul {
         color: #FFFFFF;
         border-bottom: 1px solid #CCD1D9; }
 
+pre {
+  font-family: monospace;
+  background: #F5F7FA;
+  color: #656D78;
+  border: 1px solid #CCD1D9;
+  padding: 1em;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0 0.33em;
   font-weight: inherit; }

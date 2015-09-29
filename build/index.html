@@ -19,7 +19,6 @@
 				<li><a href="#intro">Intro</a></li>
 				<li><a href="#media">Media</a></li>
 				<li><a href="#menus">Menus</a></li>
-				<li><a href="#modals">Modals</a></li>
 				<li><a href="#positions">Positions</a></li>
 				<li><a href="#tables">Tables</a></li>
 			</ul>
@@ -162,6 +161,26 @@
 			</div>
 			<div class="row spaced" id="media_queries">
 				<h2>Media Queries</h2>
+				<p>Every element has been developed with a mobile-first responsive layout in mind. All of the wrappers and grids start out at 100% fluidity, and then branch off into their structured components as the screen size increases. There is a mixin that has been created to be utilized as the screen hits certain breakpoints. The variations are as follows:</p>
+				<ul>
+					<li><b>@include scale-to('mobile') {}</b> - Variable for breakpoint is $break-mobile (default is 480px)</li>
+					<li><b>@include scale-to('tablet') {}</b> - Variable for breakpoint is $break-tablet (default is 768px)</li>
+					<li><b>@include scale-to('desktop-small') {}</b> - Variable for breakpoint is $break-desktop-small (default is 992px)</li>
+					<li><b>@include scale-to('desktop-large') {}</b> - Variable for breakpoint is $break-desktop-large (default is 1200px)</li>
+				</ul>
+				<h4>Example</h4>
+				<pre class="span6">
+.page-content {
+    width: 90%;
+    margin: 0 5%;
+
+    @include scale-to('desktop-small') {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+				</pre>
+				<p>In this example, the element with the <b>.page-content</b> class is 90% wide with a 5% left-right margin until the screen gets larger than the desktop-small breakpoint, at which time the width becomes fixed at 960px and the margin is set to auto to center it on the screen.</p>
 			</div>
 			<div class="row spaced" id="boards">
 				<h2>Boards</h2>
@@ -345,9 +364,6 @@
 						</nav>
 					</div>
 				</div>
-			</div>
-			<div class="row spaced" id="modals">
-				<h2>Modals</h2>
 			</div>
 			<div class="row spaced" id="positions">
 				<h2>Positions</h2>

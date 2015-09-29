@@ -51,3 +51,13 @@ ul {
 		@include make-list-fancy();
 	}
 }
+pre {
+	font-family: monospace;
+	background: $pre-background;
+	color: $pre-color;
+	border: $pre-border;
+	padding: $pre-padding;
+	-webkit-border-radius: $pre-border-radius;
+	-moz-border-radius: $pre-border-radius;
+	border-radius: $pre-border-radius;
+}
