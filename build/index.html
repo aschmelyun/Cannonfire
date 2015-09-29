@@ -6,7 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<nav class="fixed text-center primary">
+		<nav class="fixed text-center primary no-border">
 			<ul>
 				<li><a href="#wrappers">Wrappers</a></li>
 				<li><a href="#grid">Grid</a></li>
@@ -319,6 +319,32 @@
 			</div>
 			<div class="row spaced" id="menus">
 				<h2>Menus</h2>
+				<div class="row">
+					<div class="column span8">
+						<p>Menus take up the entire width of their parent container. They are created using a <b>nav</b> element, and the default styling for menus is shown below.</p>
+						<nav>
+							<ul>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Contact Info</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row spaced">
+					<div class="column span8">
+						<p>There are also two included styles that have backgrounds instead of a border. These are found by adding <b>.primary</b> or <b>.secondary</b> to the nav element. The primary one can be see at the top of the page (and is also attached to the top by adding <b>.fixed</b> to the nav), while the secondary menu is shown below. Oh, and you can use the included FontAwesome icons right in the menus, too!</p>
+						<nav class="secondary">
+							<ul>
+								<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+								<li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+								<li class="active"><a href="#"><i class="fa fa-download"></i> Download</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 			<div class="row spaced" id="modals">
 				<h2>Modals</h2>

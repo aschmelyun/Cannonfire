@@ -149,14 +149,15 @@ $default-margin-large:          16px;
 $default-margin-huge:           32px;
 
 // = Menus
+$menu-color-default:			$darkgrey-dark;
+$menu-border-color:				$color-secondary;
 $menu-color-primary:			$white;
 $menu-background-primary:		$color-primary;
 $menu-color-secondary:			$font-color;
 $menu-background-secondary:		$color-secondary;
 $menu-padding:					8px 10px;
 $menu-font-size:				$font-size-small;
-$menu-hover-background:			rgba(0,0,0,0.1);
-$menu-active-background:		rgba(0,0,0,0.15);
+$menu-background-default:		$lightgrey-dark;
 
 // = Paddings
 $default-padding-small:          4px;
