@@ -1,34 +1,34 @@
 {
-  "name": "Cannonfire",
-  "version": "1.0.0",
-  "description": "A simple and customizable front-end SCSS framework",
+  "name": "cannonfire",
+  "version": "2.0.0",
+  "description": "A simple SCSS framework for rapid front-end development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aschmelyun/Cannonfire.git"
+    "url": "https://github.com/aschmelyun/cannonfire.git"
   },
   "keywords": [
     "scss",
+    "front-end",
     "framework",
-    "front-end"
+    "css"
   ],
   "author": "aschmelyun",
-  "license": "ISC",
+  "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/aschmelyun/Cannonfire/issues"
+    "url": "https://github.com/aschmelyun/cannonfire/issues"
   },
-  "homepage": "https://github.com/aschmelyun/Cannonfire",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.3",
-    "gulp-uglify": "^1.2.0",
-    "gulp-watch": "^4.2.4"
+    "gulp": "~3.9.0",
+    "gulp-rename": "~1.2.2",
+    "gulp-minify-css": "~1.2.1",
+    "gulp-uglify": "~1.2.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-sass": "~2.0.4",
+    "gulp-jshint": "~1.11.2",
+    "gulp-watch": "~4.3.5"
   }
 }

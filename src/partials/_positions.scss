@@ -1,0 +1,18 @@
+.padded {
+	padding: $default-padding-normal;
+}
+.padded-s {
+	padding: $default-padding-small;
+}
+.padded-l {
+	padding: $default-padding-large;
+}
+.padded-xl {
+	padding: $default-padding-huge;
+}
+.padded-tb {
+	padding: $default-padding-normal 0;
+}
+.padded-lr {
+	padding: 0 $default-padding-normal;
+}

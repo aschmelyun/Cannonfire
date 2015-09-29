@@ -11,31 +11,20 @@ var sass        = require('gulp-sass'),
 
 // Compile SCSS
 gulp.task('sass', function() {
-    return gulp.src('src/scss/*.scss')
+    return gulp.src('src/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('build/assets/css'))
-        .pipe(concat('main.css'))
+        .pipe(concat('cannonfire.css'))
         .pipe(gulp.dest('build/assets/css'))
         .pipe(minifyCSS())
-        .pipe(rename('main.min.css'))
+        .pipe(rename('cannonfire.min.css'))
         .pipe(gulp.dest('build/assets/css'));
-});
-
-// Minify Javascript
-gulp.task('js', function() {
-    return gulp.src('src/js/*.js')
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest('build/assets/js'))
-        .pipe(uglify())
-        .pipe(rename('main.min.js'))
-        .pipe(gulp.dest('build/assets/js')); 
 });
 
 // Watch for changes
 gulp.task('watch', function() {
-    gulp.watch('src/js/*.js', ['js']);
-    gulp.watch('src/scss/*.scss', ['sass']);
+    gulp.watch('src/*.scss', ['sass']);
 });
 
 // Default task
-gulp.task('default', ['sass', 'js']);
+gulp.task('default', ['sass']);

@@ -1,0 +1,55 @@
+nav {
+	border-bottom: 1px solid $menu-border-color;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			list-style-type: none;
+			display: inline-block;
+
+			&.active > a {
+				color: darken($menu-color-default, 10%);
+			}
+
+			a {
+				text-decoration: none;
+				color: inherit;
+				display: inline-block;
+				font-size: $menu-font-size;
+				padding: $menu-padding;
+
+				&:hover {
+					color: darken($menu-color-default, 10%);
+				}
+
+				&:active {
+					color: darken($menu-color-default, 15%);
+				}
+
+				i {
+
+				}
+
+			}
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+
+	&.no-border {
+		border-bottom: none;
+	}
+}
+
+@include make-menu-with-background('primary', $menu-font-size, $menu-padding, $menu-background-primary, $menu-color-primary);
+
+@include make-menu-with-background('secondary', $menu-font-size, $menu-padding, $menu-background-secondary, $menu-color-secondary);

@@ -1,151 +1,489 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cannonfire Test</title>
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Cannonfire</title>
+		<link rel="stylesheet" href="assets/css/cannonfire.css" />
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="intro background-image">
-			<h1>Check this out.</h1>
-			<h3>It's probably the greatest thing that you have seen all day. I guarantee it.</h3>
-			<a class="button large outline" href="#">See More</a>
-		</div>
-		<div class="navigation">
-		    <div class="wrapper fixed">
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Examples</a></li>
-                    <li><a href="#">Changelog</a></li>
-                    <li><a href="#">Download</a></li>
-                </ul>
-            </div>
-        </div>
-		<div class="wrapper fixed">
+		<nav class="fixed text-center primary no-border">
+			<ul>
+				<li><a href="#intro">Intro</a></li>
+				<li><a href="#wrappers">Wrappers</a></li>
+				<li><a href="#grid">Grid</a></li>
+				<li><a href="#media_queries">Media Queries</a></li>
+				<li><a href="#boards">Boards</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#text">Text</a></li>
+				<li><a href="#media">Media</a></li>
+				<li><a href="#menus">Menus</a></li>
+				<li><a href="#positions">Positions</a></li>
+				<li><a href="#tables">Tables</a></li>
+			</ul>
+		</nav>
+		<div class="intro default text-center t-sh">
+			<h1 class="t-bd">This is Cannonfire</h1>
+			<h3>Use it to rapidly prototype websites and web application front-ends</h3>
+			<div class="row spaced">&nbsp;</div>
 			<div class="row spaced">
-				<div class="column span4 text-center">
-					<i class="fa fa-2x fa-cloud"></i>
-					<h3>Title One</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum maximus purus, id aliquet quam sodales id. Proin finibus suscipit commodo. Vestibulum nulla felis.</p>
-				</div>
-				<div class="column span4 text-center">
-					<i class="fa fa-2x fa-gear"></i>
-					<h3>Title Two</h3>
-					<p>Morbi porta nibh id placerat feugiat. Aenean ac mauris egestas, pretium quam vitae, condimentum nibh. Sed dui magna, semper ut malesuada nec, vestibulum nec erat.</p>
-				</div>
-				<div class="column span4 text-center">
-					<i class="fa fa-2x fa-lock"></i>
-					<h3>Title Three</h3>
-					<p>Mauris risus lectus, ornare sed iaculis nec, tincidunt a dolor. Etiam aliquet nunc lectus, eget consequat nibh euismod sed. Suspendisse ut luctus enim. Mauris in gravida nulla, quis.</p>
-				</div>
+				<a class="button huge primary" href="http://github.com/aschmelyun/cannonfire"><i class="fa fa-github"></i> Check it out on GitHub</a>
+				<h6>Current version: <b>2.0.0</b></h6>
 			</div>
 		</div>
-		<div class="cta background-secondary">
-			<div class="wrapper fixed">
-				<div class="row">
-					<div class="column span12 text-center">
-						<span>Are you ready to check it out yet?</span><a class="button primary huge">Let's go <i class="fa fa-lg fa-long-arrow-right"></i></a>
+		<div class="wrapper fluid">
+			<div class="row spaced" id="wrappers">
+				<h2>Wrappers</h2>
+				<h4>Fluid</h4>
+				<div class="row padded">
+					<p>This demo page is an example of a fluid wrapper. It's size changes relative to the width of the browser window.</p>
+					<ul>
+						<li>1200px and up: 90% wide</li>
+						<li>Between 768px and 1199px: 96% wide</li>
+						<li>Below 768px: 100% wide</li>
+					</ul>
+				</div>
+				<h4>Fixed</h4>
+				<div class="row padded">
+					<p>Fixed wrappers have particular widths that they remain at depending on the width of the browser window.</p>
+					<ul>
+						<li>1200px and up: 1160px wide</li>
+						<li>Between 992px and 1199px: 960px wide</li>
+						<li>Between 768px and 991px: 740px wide</li>
+						<li>Below 768px: 100% wide</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row spaced" id="grid">
+				<h2>Grid</h2>
+				<h4>With gutters</h4>
+				<div class="row spaced t-sm">
+					<div class="column span12 background-lightgrey-dark padded">.span12</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span11 background-lightgrey-dark padded">.span11</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span10 background-lightgrey-dark padded">.span10</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span9 background-lightgrey-dark padded">.span9</div>
+					<div class="column span3 background-lightgrey-dark padded">.span3</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span8 background-lightgrey-dark padded">.span8</div>
+					<div class="column span4 background-lightgrey-dark padded">.span4</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span7 background-lightgrey-dark padded">.span7</div>
+					<div class="column span5 background-lightgrey-dark padded">.span5</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span6 background-lightgrey-dark padded">.span6</div>
+					<div class="column span6 background-lightgrey-dark padded">.span6</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span4 background-lightgrey-dark padded">.span4</div>
+					<div class="column span4 background-lightgrey-dark padded">.span4</div>
+					<div class="column span4 background-lightgrey-dark padded">.span4</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span3 background-lightgrey-dark padded">.span3</div>
+					<div class="column span3 background-lightgrey-dark padded">.span3</div>
+					<div class="column span3 background-lightgrey-dark padded">.span3</div>
+					<div class="column span3 background-lightgrey-dark padded">.span3</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+					<div class="column span1 background-lightgrey-dark padded">.span1</div>
+				</div>
+			</div>
+			<div class="row spaced">
+				<h4>Without gutters</h4>
+				<div class="row spaced no-gutter t-sm">
+					<div class="column span4 background-lightgrey-light padded">.span4</div>
+					<div class="column span4 background-lightgrey-dark padded">.span4</div>
+					<div class="column span4 background-lightgrey-light padded">.span4</div>
+				</div>
+				<div class="row spaced no-gutter t-sm">
+					<div class="column span5 background-lightgrey-dark padded">.span5</div>
+					<div class="column span2 background-lightgrey-light padded">.span2</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span3 background-lightgrey-light padded">.span3</div>
+				</div>
+				<div class="row spaced no-gutter t-sm">
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+					<div class="column span8 background-lightgrey-light padded">.span8</div>
+					<div class="column span2 background-lightgrey-dark padded">.span2</div>
+				</div>
+			</div>
+			<div class="row spaced">
+				<h4>Pushing with gutters</h4>
+				<div class="row spaced t-sm">
+					<div class="column span4 push4 background-lightgrey-light padded">.span4.push4</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span3 background-lightgrey-light padded">.span3</div>
+					<div class="column span3 push3 background-lightgrey-light padded">.span3.push3</div>
+					<div class="column span3 background-lightgrey-light padded">.span3</div>
+				</div>
+				<div class="row spaced t-sm">
+					<div class="column span3 push4 background-lightgrey-light padded">.span3.push4</div>
+					<div class="column span5 background-lightgrey-light padded">.span5</div>
+				</div>
+			</div>
+			<div class="row spaced">
+				<h4>Pushing without gutters</h4>
+				<div class="row spaced no-gutter t-sm">
+					<div class="column span10 push2 background-lightgrey-light padded">.span10.push2</div>
+				</div>
+				<div class="row spaced no-gutter t-sm">
+					<div class="column span3 push4 background-lightgrey-light padded">.span3.push4</div>
+					<div class="column span5 background-lightgrey-dark padded">.span5</div>
+				</div>
+				<div class="row spaced no-gutter t-sm">
+					<div class="column span4 background-lightgrey-light padded">.span4</div>
+					<div class="column span4 background-lightgrey-dark padded">.span4</div>
+					<div class="column span2 push2 background-lightgrey-light padded">.span2.push2</div>
+				</div>
+			</div>
+			<div class="row spaced" id="media_queries">
+				<h2>Media Queries</h2>
+				<p>Every element has been developed with a mobile-first responsive layout in mind. All of the wrappers and grids start out at 100% fluidity, and then branch off into their structured components as the screen size increases. There is a mixin that has been created to be utilized as the screen hits certain breakpoints. The variations are as follows:</p>
+				<ul>
+					<li><b>@include scale-to('mobile') {}</b> - Variable for breakpoint is $break-mobile (default is 480px)</li>
+					<li><b>@include scale-to('tablet') {}</b> - Variable for breakpoint is $break-tablet (default is 768px)</li>
+					<li><b>@include scale-to('desktop-small') {}</b> - Variable for breakpoint is $break-desktop-small (default is 992px)</li>
+					<li><b>@include scale-to('desktop-large') {}</b> - Variable for breakpoint is $break-desktop-large (default is 1200px)</li>
+				</ul>
+				<p>&nbsp;</p>
+				<h4>Example</h4>
+				<pre class="span6">
+.page-content {
+    width: 90%;
+    margin: 0 5%;
+
+    @include scale-to('desktop-small') {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+				</pre>
+				<p>In this example, the element with the <b>.page-content</b> class is 90% wide with a 5% left-right margin until the screen gets larger than the desktop-small breakpoint, at which time the width becomes fixed at 960px and the margin is set to auto to center it on the screen.</p>
+			</div>
+			<div class="row spaced" id="boards">
+				<h2>Boards</h2>
+				<div class="row padded-tb">
+					<div class="board outline span4">
+						<p>This is an example of a board with an outline. Variable for the border is <span class="color-primary">$board-border</span>.</p>
+					</div>
+					<div class="board shadow span4">
+						<p>This is an example of a board with a drop shadow. Variable for the shadow is <span class="color-primary">$board-box-shadow</span>.</p>
+					</div>
+					<div class="board outline no-radius span4">
+						<p>This is an example of a board without a border radius, which is normally set by the variable <span class="color-primary">$board-border-radius</span>.</p>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="wrapper fixed">
-			<div class="row spaced no-gutter">
-				<div class="column span4">
-					<img src="http://placehold.it/500x150" />
+			<div class="row spaced" id="buttons">
+				<h2>Buttons</h2>
+				<div class="row spaced">
+					<a href="#" class="button primary">This is a primary button</a>
+					<a href="#" class="button secondary">This is a secondary one</a>
+					<a href="#" class="button primary outline">Also in outline flavors</a>
+					<a href="#" class="button secondary outline">Like this</a>
 				</div>
-				<div class="column span4">
-					<img src="http://placehold.it/500x150" />
-				</div>
-				<div class="column span4">
-					<img src="http://placehold.it/500x150" />
-				</div>
-			</div>
-			<div class="row spaced">
-				<div class="column span12">
-					<table>
-						<thead>
-							<tr>
-								<th class="span4">Make</th>
-								<th class="span3">Model</th>
-								<th class="span3">Year</th>
-								<th class="span4">Exterior</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Chevrolet</td>
-								<td>Cruze</td>
-								<td>2014</td>
-								<td>Maroon Red</td>
-							</tr>
-							<tr>
-								<td>Tesla</td>
-								<td>Model S</td>
-								<td>2014</td>
-								<td>Black</td>
-							</tr>
-						</tbody>
-					</table>
+				<div class="row spaced">
+					<a href="#" class="button primary mini">.button.mini</a>
+					<a href="#" class="button primary small">.button.small</a>
+					<a href="#" class="button primary">.button</a>
+					<a href="#" class="button primary large">.button.large</a>
+					<a href="#" class="button primary huge">.button.huge</a>
 				</div>
 			</div>
-		</div>
-		<div class="wrapper fixed">
-			<div class="alert success">
-				<i class="fa fa-check"></i>Your form has sent successfully!
+			<div class="row spaced" id="forms">
+				<h2>Forms</h2>
+				<form class="styled span4">
+					<div class="row">
+						<label class="span4" for="email">Email</label>
+						<input class="span8" type="email" id="email" name="email" placeholder="Email Address" />
+					</div>
+					<div class="row">
+						<label class="span4" for="password">Password</label>
+						<input class="span8" type="password" id="password" name="password" placeholder="Password" />
+					</div>
+					<div class="row">
+						<label class="span4" for="account_type">Account Type</label>
+						<select class="span8" name="account_type" id="account_type">
+							<option value="0" selected>Please select one</option>
+							<option value="1">Personal</option>
+							<option value="2">Developer</option>
+							<option value="3">Business</option>
+							<option value="4">Corporation</option>
+						</select>
+					</div>
+					<div class="row">
+						<label for="remember" class="checkbox">
+							<input id="remember" type="checkbox" /> Remember Me
+						</label>
+					</div>
+					<div class="row">
+						<input type="submit" class="button primary large" value="Sign In" />
+					</div>
+				</form>
+				<form class="styled">
+					<div class="row">
+						<input type="text" class="primary" value=".primary" />
+						<input type="text" class="success" value=".success" />
+						<input type="text" class="watch" value=".watch" />
+						<input type="text" class="error" value=".error" />
+					</div>
+					<div class="row">
+						<input type="text" class="primary filled" value=".primary.filled" />
+						<input type="text" class="success filled" value=".success.filled" />
+						<input type="text" class="watch filled" value=".watch.filled" />
+						<input type="text" class="error filled" value=".error.filled" />
+					</div>
+				</form>
 			</div>
-			<div class="alert watch">
-				There is a new version of this program available. Please upgrade soon.
+			<div class="row spaced" id="headings">
+				<h2>Headings</h2>
+				<p>These are the default heading sizes used throughout the framework:</p>
+				<div class="row spaced">
+					<h1><small class="color-grey-dark span1">3.157em</small>Heading One</h1>
+					<h2><small class="color-grey-dark span1">2.369em</small>Heading Two</h2>
+					<h3><small class="color-grey-dark span1">1.777em</small>Heading Three</h3>
+					<h4><small class="color-grey-dark span1">1.333em</small>Heading Four</h4>
+					<h5><small class="color-grey-dark span1">1em</small>Heading Five</h5>
+					<h6><small class="color-grey-dark span1">0.75em</small>Heading Six</h6>
+				</div>
 			</div>
-			<div class="alert error fw-b t-shad">
-				<i class="fa fa-exclamation-circle"></i>This is an alert with an icon!
+			<div class="row spaced" id="text">
+				<h2>Text</h2>
+				<div class="row">
+					<h4>Paragraphs and styles</h4>
+					<p>This is how a typical paragraph or block of text is formatted in Cannonfire. There's also a few handy classes included that you can use to <span class="t-bd">bold (.t-bd)</span>, <span class="t-uc">capitalize (.t-uc)</span>, <span class="t-it">italicize (.t-it)</span>, or <span class="t-un">underline (.t-un)</span> text within an element.</p>
+					<p class="t-mn">Add .t-mn to an element to render the font at a mini size.</p>
+					<p class="t-sm">Add .t-sm to an element to render the font at a small size.</p>
+					<p class="t-lg">Add .t-lg to an element to render the font at a large size.</p>
+					<p class="t-hg">Add .t-hg to an element to render the font at a huge size.</p>
+				</div>
+				<div class="row">
+					<h4>Lists</h4>
+					<ul>
+						<li>This is a standard unordered list</li>
+						<li>It's very plain looking</li>
+						<li>But gets the job done</li>
+					</ul>
+					<ol>
+						<li>This is a standard ordered list</li>
+						<li>There's numbers instead of discs</li>
+						<li>Pretty great stuff</li>
+					</ol>
+					<ul class="fancy span4">
+						<li>This is a list with the .fancy class</li>
+						<li>It makes for a clean, simple layout</li>
+						<li>You can also add classes to the items</li>
+						<li class="active">Like this active item</li>
+						<li>Neat, huh?</li>
+					</ul>
+				</div>
 			</div>
-		    <div class="row spaced">
-		        <form method="post" action="">
-		            <div class="row">
-		                <div class="column span6">
-		                    <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="fname" />
-		                </div>
-		                <div class="column span6">
-		                    <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lname" />
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="column span5">
-		                    <label for="address">Street Address</label>
-                            <input type="text" id="address" name="address" />
-		                </div>
-		                <div class="column span3">
-		                    <label for="city">City</label>
-                            <input type="text" id="city" name="city" />
-		                </div>
-		                <div class="column span2">
-		                    <label for="state">State</label>
-                            <select id="state" name="state">
-                                <option value="FL">FL</option>
-                                <option value="GA">GA</option>
-                                <option value="MD">MD</option>
-                                <option value="CA">CA</option>
-                                <option value="NC">NC</option>
-                            </select>
-		                </div>
-		                <div class="column span2">
-		                    <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="zip" maxlength="5" />
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="column span12">
-		                    <label for="message">Additional Message</label>
-                            <textarea id="message" name="message"></textarea>
-		                </div>
-		            </div>
-		            <input type="submit" id="sendForm" name="sendForm" value="Send" />
-		        </form>
-		    </div>
+			<div class="row spaced" id="media">
+				<h2>Media</h2>
+				<div class="row">
+					<h4>Images</h4>
+					<p>Images themselves are rendered without any default customization, except for a max-width of 100% that prevents overflow. Cannonfire includes three classes that can be added to img elements. These are:
+					<div class="column span3 text-center">
+						<img src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img (no class)</p>
+					</div>
+					<div class="column span3 text-center">
+						<img class="rounded" src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img.rounded</p>
+					</div>
+					<div class="column span3 text-center">
+						<img class="circular" src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img.circular</p>
+					</div>
+					<div class="column span3 text-center">
+						<img class="framed" src="assets/img/doggy.png" />
+						<p class="t-sm t-bd">img.framed</p>
+					</div>
+				</div>
+				<div class="row">
+					<h4>Boards</h4>
+					<div class="board with-header outline span3">
+						<img class="board-header" src="assets/img/mountains.jpg" />
+						<div class="board-content">
+							<h3>Board Title</h3>
+							<p>This is an image used as a header for a board. Just add the <b>.with-header</b> class to the board which will remove the padding. Continue by adding an image with the class <b>.board-header</b> and content below can be included in a div with the class <b>.board-content</b>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row spaced" id="menus">
+				<h2>Menus</h2>
+				<div class="row">
+					<div class="column span8">
+						<p>Menus take up the entire width of their parent container. They are created using a <b>nav</b> element, and the default styling for menus is shown below.</p>
+						<nav>
+							<ul>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">Contact Info</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row spaced">
+					<div class="column span8">
+						<p>There are also two included styles that have backgrounds instead of a border. These are found by adding <b>.primary</b> or <b>.secondary</b> to the nav element. The primary one can be see at the top of the page (and is also attached to the top by adding <b>.fixed</b> to the nav), while the secondary menu is shown below. Oh, and you can use the included FontAwesome icons right in the menus, too!</p>
+						<nav class="secondary">
+							<ul>
+								<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+								<li><a href="#"><i class="fa fa-support"></i> Support</a></li>
+								<li class="active"><a href="#"><i class="fa fa-download"></i> Download</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="row spaced" id="positions">
+				<h2>Positions</h2>
+				<div class="row">
+					<div class="column span4">
+						<p>You can align text to the right by using <b>.text-right</b></p>
+						<p class="text-right t-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper rhoncus dui, a vestibulum sem eleifend non. Cras commodo est vitae mi vehicula rhoncus. Phasellus id nulla eu felis egestas vestibulum id a lacus. Vivamus sit amet arcu quis lectus rhoncus accumsan. Integer ullamcorper elit eu laoreet facilisis.</p>
+					</div>
+					<div class="column span4">
+						<p>You can also align text to the center by using <b>.text-center</b></p>
+						<p class="text-center t-sm">Praesent aliquet, erat in tempus interdum, lorem dolor vestibulum mauris, luctus laoreet nisi dolor malesuada enim. Mauris sed turpis erat. Nullam lobortis convallis rutrum. Quisque a tristique nunc. In ullamcorper commodo purus. In molestie hendrerit lorem, et consequat nunc auctor non. Vestibulum sit amet cursus magna, a tempor justo.</p>
+					</div>
+				</div>
+				<div class="row spaced">
+					<div class="column span8">
+						<p>Images can also be aligned to the left or right by adding the classes <b>.align-left</b> or <b>.align-right</b> to the img element.</p>
+						<p>
+							<img class="align-left rounded" src="assets/img/doggy.png" />
+							Integer lobortis fringilla enim, non fringilla neque varius eu. Nam sed arcu diam. Phasellus ultrices tempus eros. Aenean condimentum purus in quam ullamcorper, ac lobortis nisi ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus enim lorem, accumsan vel interdum in, finibus in lorem. Nunc a sem volutpat, ultricies risus et, sodales tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent et luctus orci. Donec ac massa feugiat, sodales lacus nec, ullamcorper risus. Curabitur viverra condimentum purus, ut consequat augue congue et. Ut tincidunt massa sapien, malesuada lacinia lectus euismod vitae.<br /><br />
+							Maecenas euismod mattis condimentum. Integer fermentum nisl id tellus hendrerit, id luctus ante sodales. Donec volutpat nunc non eleifend placerat. Sed eget ante feugiat nunc finibus pulvinar sed ac libero. Pellentesque luctus ante at congue commodo. Suspendisse molestie orci a blandit aliquam. Vivamus maximus massa ac velit ullamcorper, nec faucibus nisi pulvinar. Nam pellentesque vitae arcu et posuere. Nam est lorem, molestie a lacus a, porttitor maximus neque. Sed in mattis ante, ac ultricies lacus. Etiam a purus sit amet risus ornare faucibus. Nam dapibus aliquet tellus ut ornare. Nam eu enim tellus.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row spaced" id="tables">
+				<h2>Tables</h2>
+				<div class="row">
+					<div class="column span6">
+						<p>Tables take up the entire width of the parent container. Below is the default table appearance, without any classes added to it.
+						<table>
+							<thead>
+								<tr>
+									<th>Select</th>
+									<th>Brand</th>
+									<th>Model</th>
+									<th>Year</th>
+									<th>Milage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" name="cars" id="cars_1" /></td>
+									<td>Chevrolet</td>
+									<td>Impala</td>
+									<td>1964</td>
+									<td>125,230</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="cars" id="cars_2" /></td>
+									<td>Audi</td>
+									<td>R8</td>
+									<td>2014</td>
+									<td>14,564</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="cars" id="cars_3" /></td>
+									<td>Ford</td>
+									<td>Ranger</td>
+									<td>2000</td>
+									<td>202,355</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>The classes that can be used to manipulate table styles are:
+							<ul>
+								<li><b>.bordered</b> - Gives a border around the entire table</li>
+								<li><b>.horiz</b> - Swaps out the vertical borders around each cell for a horizontal border at the bottom of each row</li>
+								<li><b>.grid</b> - Borders around each cell in a grid pattern</li>
+						</p>
+					</div>
+				</div>
+				<div class="row spaced">
+					<div class="column span6">
+						<p>Here we added a <b>.bordered</b> and a <b>.grid</b> class to the table element to achieve the following result:</p>
+						<table class="bordered grid">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Username</th>
+									<th>Email Address</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>aschmelyun</td>
+									<td>me@aschmelyun.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>john_doe</td>
+									<td>jdoe@testaddress.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>janedoe89</td>
+									<td>jane_doe8989@yahoo.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>another_username</td>
+									<td>test_address@domaintaken.com</td>
+									<td><a href="#" class="button small error">Delete</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

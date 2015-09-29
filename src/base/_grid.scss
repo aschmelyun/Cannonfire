@@ -1,0 +1,107 @@
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+  
+    &.fixed {
+        width: 100%;
+
+        @include scale-to('tablet') {
+            max-width: $grid-fixed-width-s;
+        }
+  	
+        @include scale-to('desktop-small') {
+            max-width: $grid-fixed-width-m;
+        }
+  	
+        @include scale-to('desktop-large') {
+            max-width: $grid-fixed-width-l;
+        }
+    }
+  
+    &.fluid {
+        width: 100%;
+  	
+        @include scale-to('tablet') {
+  		    width: $grid-fluid-width-s;
+        }
+  	
+        @include scale-to('desktop-large') {
+            width: $grid-fluid-width-l;
+        }
+    }
+}
+
+.row {
+    overflow: auto;
+    width: 100%;
+	
+    &.spaced {
+	   margin: $row-vertical-spacing 0;
+    }
+	
+    &.no-gutter {
+		
+	    > .column {
+            margin: 0;
+		}
+		
+        @for $i from 1 through 12 {
+		    .span#{$i} {
+                width: 100%;
+
+                @include scale-to('tablet') {
+                    @include make-columns-no-gutter($i, 12);
+                }
+		    }
+
+            .push#{$i} {
+                margin-left: 0;
+
+                @include scale-to('tablet') {
+                    @include make-push-no-gutter($i, 12);
+                }
+            }
+	    }
+    }
+}
+
+.column {
+    float: left;
+    min-height: 1px;
+  
+    &+& {
+        margin-left: 0;
+
+        @include scale-to('tablet') {
+            margin-left: $grid-gutter-margin;
+        }
+
+        @for $i from 1 through 12 {
+            &.push#{$i} {
+                margin-left: 0;
+
+                @include scale-to('tablet') {
+                    @include make-push-extra-gutter($i, 12);
+                }
+            }
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    .span#{$i} {
+        width: 100%;
+
+        @include scale-to('tablet') {
+            @include make-columns($i, 12);
+        }
+    }
+
+    .push#{$i} {
+        margin-left: 0;
+
+        @include scale-to('tablet') {
+            @include make-push($i, 12);
+        }
+    }
+}
