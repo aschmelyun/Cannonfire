@@ -1,9 +1,9 @@
 @mixin make-board() {
-	padding: $board-padding;
-	-webkit-border-radius: $board-border-radius;
-	-moz-border-radius: $board-border-radius;
-	border-radius: $board-border-radius;
-	float: left;
+    padding: $board-padding;
+    -webkit-border-radius: $board-border-radius;
+    -moz-border-radius: $board-border-radius;
+    border-radius: $board-border-radius;
+    float: left;
     min-height: 1px;
   
     &+& {

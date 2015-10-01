@@ -1,66 +1,66 @@
 .t-uc {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 .t-it,
 i {
-	font-style: italic;
+    font-style: italic;
 }
 .t-bd,
 b,
 strong {
-	font-weight: 700;
+    font-weight: 700;
 }
 .t-un {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 .t-mn {
-	font-size: $font-size-mini;
+    font-size: $font-size-mini;
 }
 small,
 .t-sm {
-	font-size: $font-size-small;
+    font-size: $font-size-small;
 }
 small {
-	display: inline-block;
+    display: inline-block;
 }
 .t-lg {
-	font-size: $font-size-large;
+    font-size: $font-size-large;
 }
 .t-hg {
-	font-size: $font-size-huge;
+    font-size: $font-size-huge;
 }
 .t-sh {
-	text-shadow: $text-shadow-default;
+    text-shadow: $text-shadow-default;
 }
 p {
-	margin: $paragraph-margin;
-	line-height: $paragraph-line-height;
+    margin: $paragraph-margin;
+    line-height: $paragraph-line-height;
 }
 ul {
-	list-style: disc;
+    list-style: disc;
 }
 ol {
-	list-style: decimal;
+    list-style: decimal;
 }
 ol,
 ul {
-	margin: $list-margin;
+    margin: $list-margin;
 
-	li {
-		line-height: $list-line-height;
-	}
+    li {
+        line-height: $list-line-height;
+    }
 
-	&.fancy {
-		@include make-list-fancy();
-	}
+    &.fancy {
+        @include make-list-fancy();
+    }
 }
 pre {
-	font-family: monospace;
-	background: $pre-background;
-	color: $pre-color;
-	border: $pre-border;
-	padding: $pre-padding;
-	-webkit-border-radius: $pre-border-radius;
-	-moz-border-radius: $pre-border-radius;
-	border-radius: $pre-border-radius;
+    font-family: monospace;
+    background: $pre-background;
+    color: $pre-color;
+    border: $pre-border;
+    padding: $pre-padding;
+    -webkit-border-radius: $pre-border-radius;
+    -moz-border-radius: $pre-border-radius;
+    border-radius: $pre-border-radius;
 }

@@ -1,64 +1,64 @@
 table {
-	width: 100%;
-	color: $table-color;
+    width: 100%;
+    color: $table-color;
 
-	thead {
-		text-align: left;
-		font-weight: bold;
-		background: $table-head-background;
-		color: $table-head-color;
-	}
+    thead {
+        text-align: left;
+        font-weight: bold;
+        background: $table-head-background;
+        color: $table-head-color;
+    }
 
-	tr {
-	}
+    tr {
+    }
 
-	td,
-	th {
-		padding: $table-row-padding;
-		border-left: 1px solid $table-border-color;
+    td,
+    th {
+        padding: $table-row-padding;
+        border-left: 1px solid $table-border-color;
 
-		&:first-child {
-			border-left: none;
-		}
-	}
+        &:first-child {
+            border-left: none;
+        }
+    }
 
-	&.bordered {
-		border: 1px solid $table-border-color;
-	}
+    &.bordered {
+        border: 1px solid $table-border-color;
+    }
 
-	&.horiz {
+    &.horiz {
 
-		tr:last-child {
+        tr:last-child {
 
-			> td {
-				border-bottom: none;
-			}
-		}
+            > td {
+                border-bottom: none;
+            }
+        }
 
-		td {
-			border-left: none;
-			border-bottom: 1px solid $table-border-color;
-		}
+        td {
+            border-left: none;
+            border-bottom: 1px solid $table-border-color;
+        }
 
-		th {
-			border-left: none;
-		}
-	}
+        th {
+            border-left: none;
+        }
+    }
 
-	&.grid {
+    &.grid {
 
-		tr:last-child {
+        tr:last-child {
 
-			> td {
-				border-bottom: none;
-			}
-		}
+            > td {
+                border-bottom: none;
+            }
+        }
 
-		td,
-		th {
-			border-bottom: 1px solid $table-border-color;
-		}
-	}
+        td,
+        th {
+            border-bottom: 1px solid $table-border-color;
+        }
+    }
 }
 
 @include make-table('primary', $table-color, $color-primary, $white, $table-border-color);

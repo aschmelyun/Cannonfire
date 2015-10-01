@@ -1,73 +1,73 @@
 .button,
 .button:link
 .button:visited {
-	display: inline-block;
-	text-decoration: none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 
-	&.primary {
-		@include make-button($white, $button-font-size, $button-padding, $color-primary);
+    &.primary {
+        @include make-button($white, $button-font-size, $button-padding, $color-primary);
 
-		&.outline {
-			@include make-button-outline($color-primary);
-		}
-	}
+        &.outline {
+            @include make-button-outline($color-primary);
+        }
+    }
 
-	&.secondary {
-		@include make-button($white, $button-font-size, $button-padding, $color-secondary);
+    &.secondary {
+        @include make-button($white, $button-font-size, $button-padding, $color-secondary);
 
-		&.outline {
-			@include make-button-outline($color-secondary);
-		}
-	}
+        &.outline {
+            @include make-button-outline($color-secondary);
+        }
+    }
 
-	&.success {
-		@include make-button($white, $button-font-size, $button-padding, $color-success);
+    &.success {
+        @include make-button($white, $button-font-size, $button-padding, $color-success);
 
-		&.outline {
-			@include make-button-outline($color-success);
-		}
-	}
+        &.outline {
+            @include make-button-outline($color-success);
+        }
+    }
 
-	&.watch {
-		@include make-button($white, $button-font-size, $button-padding, $color-watch);
+    &.watch {
+        @include make-button($white, $button-font-size, $button-padding, $color-watch);
 
-		&.outline {
-			@include make-button-outline($color-watch);
-		}
-	}
+        &.outline {
+            @include make-button-outline($color-watch);
+        }
+    }
 
-	&.error {
-		@include make-button($white, $button-font-size, $button-padding, $color-error);
+    &.error {
+        @include make-button($white, $button-font-size, $button-padding, $color-error);
 
-		&.outline {
-			@include make-button-outline($color-error);
-		}
-	}
+        &.outline {
+            @include make-button-outline($color-error);
+        }
+    }
 
-	&.white {
-		@include make-button($darkgrey-dark, $button-font-size, $button-padding, $white);
+    &.white {
+        @include make-button($darkgrey-dark, $button-font-size, $button-padding, $white);
 
-		&.outline {
-			@include make-button-outline($white);
-		}
-	}
+        &.outline {
+            @include make-button-outline($white);
+        }
+    }
 
-	&.mini {
-		@include make-button-size($button-font-size-mini, $button-padding-mini);
-	}
+    &.mini {
+        @include make-button-size($button-font-size-mini, $button-padding-mini);
+    }
 
-	&.small {
-		@include make-button-size($button-font-size-small, $button-padding-small);
-	}
+    &.small {
+        @include make-button-size($button-font-size-small, $button-padding-small);
+    }
 
-	&.large {
-		@include make-button-size($button-font-size-large, $button-padding-large);
-	}
+    &.large {
+        @include make-button-size($button-font-size-large, $button-padding-large);
+    }
 
-	&.huge {
-		@include make-button-size($button-font-size-huge, $button-padding-huge);
-	}
+    &.huge {
+        @include make-button-size($button-font-size-huge, $button-padding-huge);
+    }
 }

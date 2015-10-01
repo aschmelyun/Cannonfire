@@ -1,77 +1,77 @@
 @mixin make-menu($menu-class, $menu-font-size, $menu-padding, $menu-color, $menu-border-color, $menu-color) {
 
-	nav.#{$menu-class} {
-		border-bottom: 1px solid $menu-border-color;
+    nav.#{$menu-class} {
+        border-bottom: 1px solid $menu-border-color;
 
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style-type: none;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
 
-			li {
-				list-style-type: none;
-				display: inline-block;
+            li {
+                list-style-type: none;
+                display: inline-block;
 
-				&.active > a {
-					color: darken($menu-color, 10%);
-				}
+                &.active > a {
+                    color: darken($menu-color, 10%);
+                }
 
-				a {
-					text-decoration: none;
-					color: $menu-color;
-					display: inline-block;
-					font-size: $menu-font-size;
-					padding: $menu-padding;
+                a {
+                    text-decoration: none;
+                    color: $menu-color;
+                    display: inline-block;
+                    font-size: $menu-font-size;
+                    padding: $menu-padding;
 
-					&:hover {
-						color: darken($menu-color, 10%);
-					}
+                    &:hover {
+                        color: darken($menu-color, 10%);
+                    }
 
-					&:active {
-						color: darken($menu-color, 15%);
-					}
+                    &:active {
+                        color: darken($menu-color, 15%);
+                    }
 
-				}
-			}
-		}
-	}
+                }
+            }
+        }
+    }
 }
 
 @mixin make-menu-with-background($menu-class, $menu-font-size, $menu-padding, $menu-background, $menu-color) {
 
-	nav.#{$menu-class} {
-		background: $menu-background;
+    nav.#{$menu-class} {
+        background: $menu-background;
 
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style-type: none;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
 
-			li {
-				list-style-type: none;
-				display: inline-block;
+            li {
+                list-style-type: none;
+                display: inline-block;
 
-				&.active > a {
-					background: darken($menu-background, 10%);
-				}
+                &.active > a {
+                    background: darken($menu-background, 10%);
+                }
 
-				a {
-					text-decoration: none;
-					color: $menu-color;
-					display: inline-block;
-					font-size: $menu-font-size;
-					padding: $menu-padding;
+                a {
+                    text-decoration: none;
+                    color: $menu-color;
+                    display: inline-block;
+                    font-size: $menu-font-size;
+                    padding: $menu-padding;
 
-					&:hover {
-						background: darken($menu-background, 10%);
-					}
+                    &:hover {
+                        background: darken($menu-background, 10%);
+                    }
 
-					&:active {
-						background: darken($menu-background, 15%);
-					}
+                    &:active {
+                        background: darken($menu-background, 15%);
+                    }
 
-				}
-			}
-		}
-	}
+                }
+            }
+        }
+    }
 }

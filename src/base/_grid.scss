@@ -8,11 +8,11 @@
         @include scale-to('tablet') {
             max-width: $grid-fixed-width-s;
         }
-  	
+    
         @include scale-to('desktop-small') {
             max-width: $grid-fixed-width-m;
         }
-  	
+    
         @include scale-to('desktop-large') {
             max-width: $grid-fixed-width-l;
         }
@@ -20,11 +20,11 @@
   
     &.fluid {
         width: 100%;
-  	
+    
         @include scale-to('tablet') {
-  		    width: $grid-fluid-width-s;
+            width: $grid-fluid-width-s;
         }
-  	
+    
         @include scale-to('desktop-large') {
             width: $grid-fluid-width-l;
         }
@@ -34,25 +34,25 @@
 .row {
     overflow: auto;
     width: 100%;
-	
+    
     &.spaced {
-	   margin: $row-vertical-spacing 0;
+       margin: $row-vertical-spacing 0;
     }
-	
+    
     &.no-gutter {
-		
-	    > .column {
+        
+        > .column {
             margin: 0;
-		}
-		
+        }
+        
         @for $i from 1 through 12 {
-		    .span#{$i} {
+            .span#{$i} {
                 width: 100%;
 
                 @include scale-to('tablet') {
                     @include make-columns-no-gutter($i, 12);
                 }
-		    }
+            }
 
             .push#{$i} {
                 margin-left: 0;
@@ -61,7 +61,7 @@
                     @include make-push-no-gutter($i, 12);
                 }
             }
-	    }
+        }
     }
 }
 

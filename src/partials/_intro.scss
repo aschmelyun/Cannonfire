@@ -1,6 +1,6 @@
 .intro {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 @include make-intro('default', $intro-background-image, $intro-color, $intro-width, $intro-height, $intro-padding);

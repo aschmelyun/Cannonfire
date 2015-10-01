@@ -1,33 +1,33 @@
 form.styled {
-	input,
-	select,
-	textarea {
-		color: $font-color;
-		font-family: $font-family;
-	}
-	input[type="submit"] {
-		line-height: inherit;
-		border: none;
+    input,
+    select,
+    textarea {
+        color: $font-color;
+        font-family: $font-family;
+    }
+    input[type="submit"] {
+        line-height: inherit;
+        border: none;
 
-		&:hover,
-		&:active {
-			cursor: pointer;
-		}
-	}
+        &:hover,
+        &:active {
+            cursor: pointer;
+        }
+    }
 
-	label {
-		display: inline-block;
-		font-size: $input-label-font-size;
-		font-weight: $input-label-font-weight;
+    label {
+        display: inline-block;
+        font-size: $input-label-font-size;
+        font-weight: $input-label-font-weight;
 
-		&.checkbox {
-			width: 100%;
-		}
-	}
+        &.checkbox {
+            width: 100%;
+        }
+    }
 
-	.row {
-		margin: $input-row-spacing;
-	}
+    .row {
+        margin: $input-row-spacing;
+    }
 
-	@include make-inputs();
+    @include make-inputs();
 }

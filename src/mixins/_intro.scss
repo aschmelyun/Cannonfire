@@ -1,10 +1,10 @@
 @mixin make-intro($class-name, $intro-background-image, $intro-color, $intro-width, $intro-height, $intro-padding) {
-	.intro.#{$class-name} {
-		position: relative;
-		background-image: $intro-background-image;
-		color: $intro-color;
-		width: $intro-width;
-		height: $intro-height;
-		padding: $intro-padding;
-	}
+    .intro.#{$class-name} {
+        position: relative;
+        background-image: $intro-background-image;
+        color: $intro-color;
+        width: $intro-width;
+        height: $intro-height;
+        padding: $intro-padding;
+    }
 }

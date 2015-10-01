@@ -1,11 +1,11 @@
 @mixin make-color($color, $name) {
-	.color-#{$name} {
-		color: $color;
-	}
+    .color-#{$name} {
+        color: $color;
+    }
 }
 
 @mixin make-background($background, $name) {
-	.background-#{$name} {
-		background: $background;
-	}
+    .background-#{$name} {
+        background: $background;
+    }
 }

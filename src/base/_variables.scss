@@ -36,14 +36,14 @@ $purple-dark:                   #967ADC;
 $pink-light:                    #EC87C0;
 $pink-dark:                     #D770AD;
 
-$lightgrey-light:              #F5F7FA;
-$lightgrey-dark:               #E6E9ED;
+$lightgrey-light:               #F5F7FA;
+$lightgrey-dark:                #E6E9ED;
 
 $grey-light:                    #CCD1D9;
 $grey-dark:                     #AAB2BD;
 
-$darkgrey-light:               #656D78;
-$darkgrey-dark:                #434A54;
+$darkgrey-light:                #656D78;
+$darkgrey-dark:                 #434A54;
 
 $color-primary:                 $aqua-light;
 $color-primary-alt:             $aqua-dark;
@@ -67,14 +67,14 @@ $alert-font-size:               15px;
 $alert-height:                  52px;
 
 // = Alignment
-$align-left-margin:				0 1em 1em 0;
-$align-right-margin:			0 0 1em 1em;
+$align-left-margin:             0 1em 1em 0;
+$align-right-margin:            0 0 1em 1em;
 
 // = Boards
-$board-padding:					0.75em 1.5em;
-$board-border-radius:			7px;
-$board-box-shadow:				0 1px 5px rgba( 0, 0, 0, 0.35 );
-$board-border:					1px solid $color-secondary;
+$board-padding:                 0.75em 1.5em;
+$board-border-radius:           7px;
+$board-box-shadow:              0 1px 5px rgba( 0, 0, 0, 0.35 );
+$board-border:                  1px solid $color-secondary;
 
 // = Breakpoints
 $break-mobile:                  480px;
@@ -105,30 +105,30 @@ $button-font-size-huge:         17px;
 // = Font families and sizes
 $font-family:                   "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-main:                14px;
-$font-color:					$darkgrey-dark;
-$font-size-mini:				($font-size-main * 0.75);
-$font-size-small:				($font-size-main * 0.85);
-$font-size-large:				($font-size-main * 1.25);
-$font-size-huge:				($font-size-main * 1.5);
+$font-color:                    $darkgrey-dark;
+$font-size-mini:                ($font-size-main * 0.75);
+$font-size-small:               ($font-size-main * 0.85);
+$font-size-large:               ($font-size-main * 1.25);
+$font-size-huge:                ($font-size-main * 1.5);
 
 // = Forms and inputs
 $input-padding:                 6px 8px;
-$input-select-padding:			5px 3px;
+$input-select-padding:          5px 3px;
 $input-border-radius:           3px;
 $input-label-font-size:         $font-size-small;
 $input-label-font-weight:       700;
 $input-label-text-transform:    uppercase;
-$input-label-width:				25%;
+$input-label-width:             25%;
 $input-label-color:             darken($color-secondary-alt, 15%);
-$input-row-spacing:				0 0 8px;
+$input-row-spacing:             0 0 8px;
 
 // = Grids and rows
-$grid-fixed-width-l:			1160px;
-$grid-fixed-width-m:			960px;
-$grid-fixed-width-s:			740px;
-$grid-fluid-width-l:			90%;
-$grid-fluid-width-s:			96%;
-$grid-gutter-margin:			4%;
+$grid-fixed-width-l:            1160px;
+$grid-fixed-width-m:            960px;
+$grid-fixed-width-s:            740px;
+$grid-fluid-width-l:            90%;
+$grid-fluid-width-s:            96%;
+$grid-gutter-margin:            4%;
 $row-vertical-spacing:          36px;
 
 // = Headings
@@ -136,19 +136,19 @@ $heading-margin:                4px 0 12px;
 
 
 // = Images and media
-$img-rounded-radius:			7px;
-$img-framed-background:			$white;
-$img-framed-border:				1px solid $color-secondary;
-$img-framed-padding:			7px;
-$thumbnail-border:				1px solid $color-secondary;
-$thumbnail-padding:				12px;
+$img-rounded-radius:            7px;
+$img-framed-background:         $white;
+$img-framed-border:             1px solid $color-secondary;
+$img-framed-padding:            7px;
+$thumbnail-border:              1px solid $color-secondary;
+$thumbnail-padding:             12px;
 
 // = Intros
-$intro-background-image:		url('../img/background.jpg');
-$intro-color:					$white;
-$intro-width:					100%;
-$intro-height:					540px;
-$intro-padding:					7em 5%;
+$intro-background-image:        url('../img/background.jpg');
+$intro-color:                   $white;
+$intro-width:                   100%;
+$intro-height:                  540px;
+$intro-padding:                 7em 5%;
 
 // = Margins
 $default-margin-small:          4px;
@@ -157,15 +157,15 @@ $default-margin-large:          16px;
 $default-margin-huge:           32px;
 
 // = Menus
-$menu-color-default:			$darkgrey-dark;
-$menu-border-color:				$color-secondary;
-$menu-color-primary:			$white;
-$menu-background-primary:		$color-primary;
-$menu-color-secondary:			$font-color;
-$menu-background-secondary:		$color-secondary;
-$menu-padding:					8px 10px;
-$menu-font-size:				$font-size-small;
-$menu-background-default:		$lightgrey-dark;
+$menu-color-default:            $darkgrey-dark;
+$menu-border-color:             $color-secondary;
+$menu-color-primary:            $white;
+$menu-background-primary:       $color-primary;
+$menu-color-secondary:          $font-color;
+$menu-background-secondary:     $color-secondary;
+$menu-padding:                  8px 10px;
+$menu-font-size:                $font-size-small;
+$menu-background-default:       $lightgrey-dark;
 
 // = Paddings
 $default-padding-small:          4px;
@@ -174,30 +174,30 @@ $default-padding-large:          16px;
 $default-padding-huge:           32px;
 
 // = Paragraphs and text
-$paragraph-margin:				1em 0;
-$paragraph-line-height:			1.333em;
+$paragraph-margin:              1em 0;
+$paragraph-line-height:         1.333em;
 
-$list-margin:					1em 0 0 3em;
-$list-line-height:				1.333em;
-$list-fancy-margin:				1em 0 0;
-$list-fancy-padding:			0.5em 0.75em;
-$list-fancy-border:				1px solid;
-$list-fancy-border-color:		$color-secondary;
-$list-fancy-border-radius:		7px;
+$list-margin:                   1em 0 0 3em;
+$list-line-height:              1.333em;
+$list-fancy-margin:             1em 0 0;
+$list-fancy-padding:            0.5em 0.75em;
+$list-fancy-border:             1px solid;
+$list-fancy-border-color:       $color-secondary;
+$list-fancy-border-radius:      7px;
 
 // = Tables
-$table-border-color:			$color-secondary;
-$table-head-background:			$lightgrey-dark;
-$table-head-color:				$darkgrey-dark;
-$table-color:					$darkgrey-light;
-$table-row-padding:				0.5em 0.75em;
+$table-border-color:            $color-secondary;
+$table-head-background:         $lightgrey-dark;
+$table-head-color:              $darkgrey-dark;
+$table-color:                   $darkgrey-light;
+$table-row-padding:             0.5em 0.75em;
 
 // = Typography
 $default-line-height:           0.75em;
 $line-height-main:              20px;
 $text-shadow-default:           0 1px 1px rgba(0,0,0,0.25);
-$pre-background:				$lightgrey-light;
-$pre-color:						$darkgrey-light;
-$pre-border:					1px solid $color-secondary;
-$pre-padding:					1em;
-$pre-border-radius:				7px;
+$pre-background:                $lightgrey-light;
+$pre-color:                     $darkgrey-light;
+$pre-border:                    1px solid $color-secondary;
+$pre-padding:                   1em;
+$pre-border-radius:             7px;
