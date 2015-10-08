@@ -71,3 +71,23 @@
         @include make-button-size($button-font-size-huge, $button-padding-huge);
     }
 }
+a,
+a:link,
+a:visited {
+    color: $link-color-default;
+    text-decoration: $link-decoration-default;
+
+    &:hover {
+        color: darken($link-color-default, 10%);
+    }
+
+    &:active {
+        color: darken($link-color-default, 15%);
+    }
+
+    @include make-link('primary', $color-primary, $link-decoration-default);
+    @include make-link('secondary', $color-secondary, $link-decoration-default);
+    @include make-link('success', $color-success, $link-decoration-default);
+    @include make-link('watch', $color-watch, $link-decoration-default);
+    @include make-link('error', $color-error, $link-decoration-default);
+}

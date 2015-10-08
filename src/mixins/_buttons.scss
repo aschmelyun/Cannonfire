@@ -43,3 +43,21 @@
     font-size: $font-size;
     padding: $padding;
 }
+
+@mixin make-link($class-name, $link-color, $link-decoration) {
+    &.link {
+        &.#{$class-name} {
+
+            color: $link-color;
+            text-decoration: $link-decoration;
+
+            &:hover {
+                color: darken($link-color, 10%);
+            }
+
+            &:active {
+                color: darken($link-color, 15%);
+            }
+        }
+    }
+}
