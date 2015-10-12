@@ -1193,83 +1193,83 @@ nav.secondary {
     font-size: 17px;
     padding: 16px 32px; }
 
-a,
-a:link,
-a:visited {
-  color: #CCD1D9;
-  text-decoration: none; }
-  a:hover,
-  a:link:hover,
-  a:visited:hover {
+.link,
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #CCD1D9; }
+  .link:hover,
+  .link:link:hover,
+  .link:visited:hover {
     color: #afb7c3; }
-  a:active,
-  a:link:active,
-  a:visited:active {
+  .link:active,
+  .link:link:active,
+  .link:visited:active {
     color: #a0a9b8; }
-  a.link.primary,
-  a:link.link.primary,
-  a:visited.link.primary {
+  .link.link.primary,
+  .link:link.link.primary,
+  .link:visited.link.primary {
     color: #4FC1E9;
     text-decoration: none; }
-    a.link.primary:hover,
-    a:link.link.primary:hover,
-    a:visited.link.primary:hover {
+    .link.link.primary:hover,
+    .link:link.link.primary:hover,
+    .link:visited.link.primary:hover {
       color: #22b1e3; }
-    a.link.primary:active,
-    a:link.link.primary:active,
-    a:visited.link.primary:active {
+    .link.link.primary:active,
+    .link:link.link.primary:active,
+    .link:visited.link.primary:active {
       color: #1aa2d1; }
-  a.link.secondary,
-  a:link.link.secondary,
-  a:visited.link.secondary {
+  .link.link.secondary,
+  .link:link.link.secondary,
+  .link:visited.link.secondary {
     color: #CCD1D9;
     text-decoration: none; }
-    a.link.secondary:hover,
-    a:link.link.secondary:hover,
-    a:visited.link.secondary:hover {
+    .link.link.secondary:hover,
+    .link:link.link.secondary:hover,
+    .link:visited.link.secondary:hover {
       color: #afb7c3; }
-    a.link.secondary:active,
-    a:link.link.secondary:active,
-    a:visited.link.secondary:active {
+    .link.link.secondary:active,
+    .link:link.link.secondary:active,
+    .link:visited.link.secondary:active {
       color: #a0a9b8; }
-  a.link.success,
-  a:link.link.success,
-  a:visited.link.success {
+  .link.link.success,
+  .link:link.link.success,
+  .link:visited.link.success {
     color: #A0D468;
     text-decoration: none; }
-    a.link.success:hover,
-    a:link.link.success:hover,
-    a:visited.link.success:hover {
+    .link.link.success:hover,
+    .link:link.link.success:hover,
+    .link:visited.link.success:hover {
       color: #87c940; }
-    a.link.success:active,
-    a:link.link.success:active,
-    a:visited.link.success:active {
+    .link.link.success:active,
+    .link:link.link.success:active,
+    .link:visited.link.success:active {
       color: #7aba35; }
-  a.link.watch,
-  a:link.link.watch,
-  a:visited.link.watch {
+  .link.link.watch,
+  .link:link.link.watch,
+  .link:visited.link.watch {
     color: #FFCE54;
     text-decoration: none; }
-    a.link.watch:hover,
-    a:link.link.watch:hover,
-    a:visited.link.watch:hover {
+    .link.link.watch:hover,
+    .link:link.link.watch:hover,
+    .link:visited.link.watch:hover {
       color: #ffbf21; }
-    a.link.watch:active,
-    a:link.link.watch:active,
-    a:visited.link.watch:active {
+    .link.link.watch:active,
+    .link:link.link.watch:active,
+    .link:visited.link.watch:active {
       color: #ffb808; }
-  a.link.error,
-  a:link.link.error,
-  a:visited.link.error {
+  .link.link.error,
+  .link:link.link.error,
+  .link:visited.link.error {
     color: #ED5565;
     text-decoration: none; }
-    a.link.error:hover,
-    a:link.link.error:hover,
-    a:visited.link.error:hover {
+    .link.link.error:hover,
+    .link:link.link.error:hover,
+    .link:visited.link.error:hover {
       color: #e8273b; }
-    a.link.error:active,
-    a:link.link.error:active,
-    a:visited.link.error:active {
+    .link.link.error:active,
+    .link:link.link.error:active,
+    .link:visited.link.error:active {
       color: #de182c; }
 
 .t-uc {
