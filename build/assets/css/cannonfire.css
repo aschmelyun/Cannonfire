@@ -71,8 +71,11 @@ table {
         width: 90%; } }
 
 .row {
-  overflow: auto;
   width: 100%; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
   .row.spaced {
     margin: 36px 0; }
   .row.no-gutter > .column {
@@ -525,8 +528,7 @@ form.styled textarea {
 form.styled input[type="submit"] {
   line-height: inherit;
   border: none; }
-  form.styled input[type="submit"]:hover,
-  form.styled input[type="submit"]:active {
+  form.styled input[type="submit"]:hover, form.styled input[type="submit"]:active {
     cursor: pointer; }
 
 form.styled label {
@@ -1350,24 +1352,19 @@ ul {
         -moz-border-radius-bottomleft: 7px;
         border-bottom-right-radius: 7px;
         border-bottom-left-radius: 7px; }
-      ol.fancy li.active,
-      ol.fancy li.primary,
-      ol.fancy li.disabled,
-      ol.fancy li.secondary,
+      ol.fancy li.active, ol.fancy li.primary, ol.fancy li.disabled, ol.fancy li.secondary,
       ul.fancy li.active,
       ul.fancy li.primary,
       ul.fancy li.disabled,
       ul.fancy li.secondary {
         margin-top: -1px; }
-      ol.fancy li.active,
-      ol.fancy li.primary,
+      ol.fancy li.active, ol.fancy li.primary,
       ul.fancy li.active,
       ul.fancy li.primary {
         background: #4FC1E9;
         color: #FFFFFF;
         border-color: #4FC1E9; }
-      ol.fancy li.disabled,
-      ol.fancy li.secondary,
+      ol.fancy li.disabled, ol.fancy li.secondary,
       ul.fancy li.disabled,
       ul.fancy li.secondary {
         background: #CCD1D9;
@@ -1720,7 +1717,7 @@ h6 {
     left: -1.85714em; }
 
 .fa-border {
-  padding: 0.2em 0.25em 0.15em;
+  padding: .2em .25em .15em;
   border: solid 0.08em #eee;
   border-radius: .1em; }
 

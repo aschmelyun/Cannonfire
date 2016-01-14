@@ -32,8 +32,13 @@
 }
 
 .row {
-    overflow: auto;
     width: 100%;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
     
     &.spaced {
        margin: $row-vertical-spacing 0;
